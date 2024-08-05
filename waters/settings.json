@@ -1,0 +1,107 @@
+{
+    "name": "waters",
+    "description": "Waters thing",
+    "libraries": [
+        "p5",
+        "paper"
+    ],
+    "script": "waters.js",
+    "snippets": [
+        "initP5", "initPaper","HashGrid","round_random", "timeout", "ApplyShader","GenericParticleClass"
+    ],
+    "variations": [
+    ],
+    "params": {
+        "steps": {
+            "name": "Sim Length",
+            "type": "number",
+            "min": 10,
+            "max": 1000,
+            "step": 10,
+            "value": 100
+        },
+        "colors": {
+            "name": "Colors",
+            "type": "array",
+            "subtype": "color",
+            "value": [
+                "tomato",
+                "cornflowerblue",
+                "gold"
+            ]
+        },
+        "blobSize": {
+            "name": "Blob Size",
+            "type": "number",
+            "min": 1,
+            "max": 20,
+            "step": 1,
+            "value": 4
+        },
+        "threshold": {
+            "name": "Threshold",
+            "type": "number",
+            "min": 0,
+            "max": 1,
+            "step": 0.1,
+            "value": 0.7
+        },
+        "border": {
+            "name": "Border",
+            "type": "number",
+            "min": 0,
+            "max": 500,
+            "step": 10,
+            "value": 250
+        },
+        "blurSize": {
+            "name": "Blobbbiness",
+            "type": "number",
+            "min": 1,
+            "max": 30,
+            "step": 1,
+            "value": 5
+        },
+        "sumDots": {
+            "name": "Sum Dots",
+            "type": "number",
+            "min": 100,
+            "max": 3000,
+            "step": 100,
+            "value": 1000
+        },
+
+        "repelStrength": {
+            "name": "Repel",
+            "type": "number",
+            "min": 0,
+            "max": 5,
+            "step": 0.1,
+            "value": 1
+        },
+
+        "attractionStrength": {
+            "name": "Attraction",
+            "type": "number",
+            "min": 0,
+            "max": 5,
+            "step": 0.1,
+            "value": 1
+        },
+
+        "gravity": {
+            "name": "Gravity",
+            "type": "number",
+            "min": 0,
+            "max": 5,
+            "step": 0.1,
+            "value": 1
+        },
+
+        "backgroundColor": {
+            "name": "Background Color",
+            "type": "color",
+            "value": "rgb(255, 245, 225)"
+        }
+    }
+}

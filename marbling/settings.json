@@ -1,0 +1,29 @@
+{
+    "name": "marbling",
+    "description": "Marbling",
+    "libraries": [
+        "paper",
+        "p5"
+    ],
+    "script": "main.js",
+    "snippets": [
+        "initP5", "initPaper", "makeSVG","saveSVG","round_random"
+    ],
+    "variations": [{
+            "name": "Hey look! they pop!",
+            "file": "pops.js"
+        }, {
+            "name": "Too Many Eyes",
+            "file": "eyes.js"
+        }, {
+            "name": "Abstract",
+            "file": "abstract.js"
+        }],
+    "params": {
+        "backgroundColor": {
+            "name": "Background Color",
+            "type": "color",
+            "value": "darkgray"
+        }
+    }
+}

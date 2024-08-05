@@ -1,0 +1,74 @@
+{
+    "name": "genuary-physics",
+    "description": "Physics simulation for Genuary 2023",
+    "libraries": [
+        "matter",
+        "p5"
+    ],
+    "script": "main.js",
+    "snippets": [
+        "initP5", "initMatter","timeout", "choose", "round_random"
+    ],
+    "variations": [{
+            "name": "Hey look! they pop!",
+            "file": "pops.js"
+        }, {
+            "name": "Too Many Eyes",
+            "file": "eyes.js"
+        }, {
+            "name": "Abstract",
+            "file": "abstract.js"
+        }],
+    "params": {
+        "ballSizeRange": {
+            "name": "Ball Size Range",
+            "type": "range",
+            "min": 5,
+            "max": 100,
+            "step": 1,
+            "value": [10,60]
+        },
+
+        "totalBalls": {
+            "name": "Total Balls",
+            "type": "number",
+            "min": 20,
+            "max": 1000,
+            "step": 1,
+            "value": 100
+        },
+
+        "colors": {
+            "name": "Colors",
+            "type": "array",
+            "subtype": "color",
+            "value": [
+                "pink",
+                "seagreen",
+                "salmon",
+                "azure"
+            ]
+        },
+
+        "eyeSize": {
+            "name": "Eye Size",
+            "type": "number",
+            "min": 1,
+            "max": 20,
+            "step": 1,
+            "value": 4
+        },
+
+        "eyeColor": {
+            "name": "Eye Color",
+            "type": "color",
+            "value": "#000000"
+        },
+
+        "backgroundColor": {
+            "name": "Background Color",
+            "type": "color",
+            "value": "darkgray"
+        }
+    }
+}

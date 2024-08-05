@@ -1,0 +1,35 @@
+<title>Network Growth</title>
+<subtitle>Just click and behold</subtitle>
+
+<card>
+  <title>Introduction</title>
+  <subtitle>What is this?</subtitle>
+  <content>
+    <p>This code creates an interactive visualization of a growing network. It uses p5.js for graphics and Matter.js for
+      physics simulation.</p>
+    <p>The code handles drawing, growth logic, and physics interactions. It creates a dynamic, expanding network
+      structure
+      that responds to user input and evolves over time.</p>
+  </content>
+</card>
+
+<card>
+  <title>How It Works</title>
+
+  <content>
+    <p>The network consists of circles (vertices) connected by lines. Here's how it works:</p>
+    <ul>
+      <li>Clicking the mouse adds a new circle at that location.</li>
+      <li>Every few frames, the network grows automatically:
+        <ul>
+          <li>It selects an existing circle</li>
+          <li>Creates a new circle nearby</li>
+          <li>Connects them with a line</li>
+        </ul>
+      </li>
+      <li>The network moves dynamically due to simulated physics</li>
+      <li>Circles with only one connection are drawn slightly larger</li>
+      <li>Pressing the spacebar pauses or resumes the animation</li>
+    </ul>
+  </content>
+</card>
