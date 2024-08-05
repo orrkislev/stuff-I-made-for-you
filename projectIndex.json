@@ -1,0 +1,30 @@
+{
+    "projects": [
+        {
+            "name": "Friendly Thingies",
+            "directory": "thingies"
+        },
+        {
+            "name": "Growth",
+            "directory": "growth"
+        },{
+            "name": "Marbling",
+            "directory": "marbling"
+        },{
+            "name": "Puzzle",
+            "directory": "puzzle"
+        },{
+            "name": "Sandbox",
+            "directory": "sandbox"
+        },{
+            "name": "Spiral",
+            "directory": "spiral"
+        },{
+            "name": "Tunnel",
+            "directory": "tunnel"
+        },{
+            "name": "Waves",
+            "directory": "waves"
+        }
+    ]
+}
