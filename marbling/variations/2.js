@@ -1,13 +1,14 @@
 //: FILE Main
-backgroundColor = '#ccc'
+backgroundColor = 'red'
 
 function setup() {
     initP5(true)
     noStroke()
     fill(255)
     background(backgroundColor)
-    
+    blendMode(DIFFERENCE)
     if (debugMode) {
+        blendMode(BLEND)
         noFill()
         stroke(255, 0, 255)
     }
@@ -19,7 +20,6 @@ function draw() {
         if (debugMode) background(0)
         else background(backgroundColor)
         blendMode(DIFFERENCE)
-
         new Drop(mouseX, mouseY)
         drops.forEach(drop => drop.show())
     }

@@ -1,4 +1,4 @@
-//FILE Main
+//: FILE Main
 
 lineLength = 2
 lineWidth = 1
@@ -63,8 +63,9 @@ function keyPressed() {
         else loop()
     }
 }
+//: FILE end
 
-//FILE Objects
+//: FILE Objects
 
 const vertices = []
 function createCircle(x, y, connectTo) {
@@ -113,3 +114,4 @@ function grow() {
 
     createCircle(newX, newY, nodeToGrow)
 }
+//: FILE end

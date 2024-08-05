@@ -9,16 +9,15 @@
     "snippets": [
         "initP5", "initPaper", "makeSVG","saveSVG","round_random"
     ],
-    "variations": [{
-            "name": "Hey look! they pop!",
-            "file": "pops.js"
-        }, {
-            "name": "Too Many Eyes",
-            "file": "eyes.js"
-        }, {
-            "name": "Abstract",
-            "file": "abstract.js"
-        }],
+    "variations": [
+        {
+            "name": "What if everything was pink?",
+            "file": "1.js"
+        },{
+            "name": "What if the background was red?",
+            "file": "2.js"
+        }
+    ],
     "params": {
         "backgroundColor": {
             "name": "Background Color",

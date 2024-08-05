@@ -1,3 +1,5 @@
+//: FILE main
+
 ballSizeRange = [10, 100]
 totalBalls = 150
 colors = ['brown', 'seagreen', 'orange', 'cornflowerblue']
@@ -38,6 +40,9 @@ function draw() {
     Matter.Engine.update(engine, 0.1, .1)
     balls.forEach(ball => ball.show())
 }
+//: FILE end
+
+//: FILE ball
 let balls = []
 class Ball {
     constructor(x, y, r) {
@@ -94,3 +99,4 @@ class Ball {
         this.lastPos = { x: pos.x, y: pos.y }
     }
 }
+//: FILE end
