@@ -1,12 +1,10 @@
 //: FILE Main
-backgroundColor = 'pink'
+backgroundColor = 'orange'
 
 function setup() {
     initP5(true)
     noStroke()
     fill(255)
-    background(backgroundColor)
-    blendMode(DIFFERENCE)
     if (debugMode) {
         blendMode(BLEND)
         noFill()
@@ -16,10 +14,7 @@ function setup() {
 
 function draw() {
     if (mouseIsPressed) {
-        blendMode(BLEND)
-        if (debugMode) background(0)
-        else background(backgroundColor)
-        blendMode(DIFFERENCE)
+        background(backgroundColor)
         new Drop(mouseX, mouseY)
         drops.forEach(drop => drop.show())
     }
@@ -38,7 +33,7 @@ const drops = []
 class Drop {
     constructor(x, y) {
         this.center = V(x, y)
-        this.r = random(10, 40)
+        this.r = 10
         this.points = []
         for (let a = 0; a < 360; a += 1)
             this.points.push(p5.Vector.fromAngle(radians(a)).mult(this.r).add(this.center))

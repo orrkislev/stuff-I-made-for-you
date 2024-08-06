@@ -10,13 +10,13 @@
         "initP5", "initMatter","timeout", "choose", "round_random"
     ],
     "variations": [{
-            "name": "Hey look! they pop!",
+            "name": "what if they could pop when the mouse runs over them?",
             "file": "pops.js"
         }, {
-            "name": "Too Many Eyes",
+            "name": "what if they were too big to fit the screen?",
             "file": "eyes.js"
         }, {
-            "name": "Abstract",
+            "name": "What if we only drew connections between the close-enough balls?",
             "file": "abstract.js"
         }],
     "params": {
