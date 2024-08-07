@@ -24,15 +24,15 @@ function keyPressed(){
 }
 
 function draw() {
-    if (!mouseIsPressed) return
     loadPixels()
+    const mouseMovement = dist(pmouseX, pmouseY, mouseX, mouseY)
     const mousePos = p(mouseX, mouseY)
-    for (let i = 0; i < 10000; i++) {
+    for (let i = 0; i < map(mouseMovement,0,100,10000,0); i++) {
 
         // const x = random(width)
         // const y = random(height)
         const a = random(360)
-        const r = random()**3 * blurSize
+        const r = random()**3 * map(mouseMovement,0,100,blurSize,0)
         const x = mouseX + r * cos(a)
         const y = mouseY + r * sin(a)
         let pos = p(x, y)
