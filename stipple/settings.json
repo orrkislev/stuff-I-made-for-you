@@ -7,17 +7,17 @@
     ],
     "script": "main.js",
     "snippets": [
-        "initP5", "initPaper","ease"
+        "initP5", "initPaper","easeMap","easeInCubic"
     ],
     "variations": [{
-            "name": "what if they could pop when the mouse runs over them?",
-            "file": "pops.js"
-        }, {
-            "name": "what if they were too big to fit the screen?",
-            "file": "eyes.js"
-        }, {
-            "name": "What if we only drew connections between the close-enough balls?",
-            "file": "abstract.js"
+            "name": "what if the screen will always refill?",
+            "file": "1.js"
+        },{
+            "name": "what if the text will rotate?",
+            "file": "2.js"
+        },{
+            "name": "what if we could use the noise as a blend?",
+            "file": "3.js"
         }],
     "params": {
         "blurSize": {
@@ -26,7 +26,7 @@
             "min": 0,
             "max": 200,
             "step": 1,
-            "value": 100
+            "value": 80
         },
         "blurStrength": {
             "name": "Blur Strength",
@@ -34,7 +34,7 @@
             "min": 0,
             "max": 400,
             "step": 1,
-            "value": 200
+            "value": 80
         },
 
         "backgroundColor": {

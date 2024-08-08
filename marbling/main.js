@@ -1,5 +1,6 @@
 //: FILE Main
 backgroundColor = '#ccc'
+dropSize = [10,20]
 
 function setup() {
     initP5(true)
@@ -38,7 +39,7 @@ const drops = []
 class Drop {
     constructor(x, y) {
         this.center = V(x, y)
-        this.r = random(10, 40)
+        this.r = random(...dropSize)
         this.points = []
         for (let a = 0; a < 360; a += 1)
             this.points.push(p5.Vector.fromAngle(radians(a)).mult(this.r).add(this.center))

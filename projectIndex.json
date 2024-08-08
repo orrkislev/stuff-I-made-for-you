@@ -10,6 +10,9 @@
         },{
             "name": "Marbling",
             "directory": "marbling"
+        },{
+            "name": "Stipple Blur",
+            "directory": "stipple"
         }
     ]
 }
