@@ -1,11 +1,10 @@
 //: FILE main
-let totalBalls = 250;
-let colors = ['brown', 'seagreen', 'orange', 'cornflowerblue'];
-let eyeSize = 4;
-let eyeColor = 'black';
-let backgroundColor = 'beige';
-let engine, world, engineRunner;
-let balls = [];
+totalBalls = 250;
+colors = ['brown', 'seagreen', 'orange', 'cornflowerblue'];
+eyeSize = 4;
+eyeColor = 'black';
+backgroundColor = 'beige';
+balls = [];
 
 function setup() {
     initP5(true)
@@ -16,7 +15,7 @@ function setup() {
 
 async function buildImage() {
     // Add walls
-    const wallOptions = { isStatic: true, restitution: 1 };
+    wallOptions = { isStatic: true, restitution: 1 };
     Matter.Composite.add(world, [
         Matter.Bodies.rectangle(width / 2, 0, width, 10, wallOptions),
         Matter.Bodies.rectangle(width / 2, height, width, 10, wallOptions),
@@ -25,9 +24,9 @@ async function buildImage() {
     ]);
 
     // Create balls
-    for (let i = 0; i < totalBalls; i++) {
-        const ballX = width * random(.45, .55)
-        const ballY = height * random(.5, .5);
+    for (i = 0; i < totalBalls; i++) {
+        ballX = width * random(.45, .55)
+        ballY = height * random(.5, .5);
         new Ball(ballX, ballY, 10);
         await timeout(30);
     }
@@ -38,11 +37,11 @@ function draw() {
     Matter.Engine.update(engine);
 
     // stroke(40,20,10,20)
-    for (let i = 0; i < balls.length - 1; i++) {
-        for (let j = i + 1; j < balls.length; j++) {
-            let pos1 = balls[i].body.position
-            let pos2 = balls[j].body.position
-            let distance = dist(pos1.x, pos1.y, pos2.x, pos2.y);
+    for (i = 0; i < balls.length - 1; i++) {
+        for (j = i + 1; j < balls.length; j++) {
+            pos1 = balls[i].body.position
+            pos2 = balls[j].body.position
+            distance = dist(pos1.x, pos1.y, pos2.x, pos2.y);
             if (distance < 100) {
                 line(pos1.x, pos1.y, pos2.x, pos2.y);
             }

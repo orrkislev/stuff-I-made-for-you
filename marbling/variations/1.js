@@ -29,13 +29,13 @@ function keyPressed() {
 //: FILE end
 
 //: FILE Drop
-const drops = []
+drops = []
 class Drop {
     constructor(x, y) {
         this.center = V(x, y)
         this.r = 10
         this.points = []
-        for (let a = 0; a < 360; a += 1)
+        for (var a = 0; a < 360; a += 1)
             this.points.push(p5.Vector.fromAngle(radians(a)).mult(this.r).add(this.center))
         drops.forEach(drop => drop.marbleBy(this))
         this.index = drops.length
@@ -45,20 +45,20 @@ class Drop {
 
     marbleBy(drop) {
         this.points.forEach(P => {
-            const C = drop.center
-            const diff = P.dist(C)
-            const r = drop.r
+            var C = drop.center
+            var diff = P.dist(C)
+            var r = drop.r
             P.set(p5.Vector.add(C, p5.Vector.sub(P, C).mult(sqrt(1 + r * r / (diff * diff)))))
         })
         this.rebuild()
     }
 
     rebuild() {
-        let shouldRebuild = false
-        const newPoints = []
-        for (let i = 0; i < this.points.length; i++) {
-            const p1 = this.points[i]
-            const p2 = this.points[(i + 1) % this.points.length]
+        var shouldRebuild = false
+        var newPoints = []
+        for (var i = 0; i < this.points.length; i++) {
+            var p1 = this.points[i]
+            var p2 = this.points[(i + 1) % this.points.length]
             newPoints.push(p1)
             if (p1.dist(p2) > 10) {
                 newPoints.push(p5.Vector.add(p1, p2).div(2))
@@ -81,7 +81,7 @@ class Drop {
         endShape(CLOSE)
 
         if (debugMode) {
-            for (let i = 0; i < this.points.length; i += 10) {
+            for (i = 0; i < this.points.length; i += 10) {
                 ellipse(this.points[i].x, this.points[i].y, 2)
             }
         }

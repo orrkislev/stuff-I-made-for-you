@@ -22,10 +22,10 @@ function draw() {
     background(backgroundColor)
 
     vertices.forEach(vrt => {
-        const dir = V(vrt.position.x, vrt.position.y).sub(center)
+        dir = V(vrt.position.x, vrt.position.y).sub(center)
         dir.rotate(noise(vrt.position.x/100, vrt.position.y/100) * 3600-1800)
         // strength should be proportional to distance from center, closer = less force
-        const strength = 1 - dir.mag() / 300
+        strength = 1 - dir.mag() / 300
         dir.setMag(strength / 300)
         vrt.force = dir
     })
@@ -35,8 +35,8 @@ function draw() {
     stroke(lineColor)
     strokeWeight(lineWidth)
     connections.forEach(c => {
-        const posA = c.bodyA.position
-        const posB = c.bodyB.position
+        posA = c.bodyA.position
+        posB = c.bodyB.position
         line(posA.x, posA.y, posB.x, posB.y)
     })
 
@@ -48,7 +48,7 @@ function draw() {
 
     fill(endsColor)
     noStroke()
-    const ends = vertices.filter(c => c.connections && c.connections.length == 1)
+    ends = vertices.filter(c => c.connections && c.connections.length == 1)
     ends.forEach(c => {
         circle(c.position.x, c.position.y, endsSize)
     })
@@ -67,9 +67,9 @@ function keyPressed() {
 
 //: FILE Objects
 
-const vertices = []
+vertices = []
 function createCircle(x, y, connectTo) {
-    const newCircle = Bodies.circle(x, y, lineLength, {
+    newCircle = Bodies.circle(x, y, lineLength, {
         friction: 0,
         restitution: 0.1,
         density: 0.1,
@@ -82,9 +82,9 @@ function createCircle(x, y, connectTo) {
     if (connectTo) makeConnection(connectTo, newCircle)
 }
 
-const connections = []
+connections = []
 function makeConnection(a, b) {
-    const constraint = Constraint.create({
+    constraint = Constraint.create({
         bodyA: a, bodyB: b,
         stiffness: 0.1,
         length: lineLength * 2
@@ -100,17 +100,17 @@ function makeConnection(a, b) {
 function grow() {
     if (vertices.length == 0) return
 
-    let nodeToGrow = null;
-    const nulls = vertices.filter(c => !c.connections)
+    nodeToGrow = null;
+    nulls = vertices.filter(c => !c.connections)
     if (nulls.length > 0) nodeToGrow = choose(nulls)
     else {
-        const ends = vertices.filter(c => c.connections.length == 1)
+        ends = vertices.filter(c => c.connections.length == 1)
         nodeToGrow = random() < .9 ? choose(ends) : choose(vertices)
     }
-    const angleToCenter = atan2(nodeToGrow.position.y - height/2, nodeToGrow.position.x - width/2)
-    const newAngle = angleToCenter + 100
-    const newX = nodeToGrow.position.x + cos(newAngle) * 10
-    const newY = nodeToGrow.position.y + sin(newAngle) * 10
+    angleToCenter = atan2(nodeToGrow.position.y - height/2, nodeToGrow.position.x - width/2)
+    newAngle = angleToCenter + 100
+    newX = nodeToGrow.position.x + cos(newAngle) * 10
+    newY = nodeToGrow.position.y + sin(newAngle) * 10
 
     createCircle(newX, newY, nodeToGrow)
 }

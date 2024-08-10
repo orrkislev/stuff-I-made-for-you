@@ -7,15 +7,18 @@
     ],
     "script": "main.js",
     "snippets": [
-        "initP5", "initPaper", "makeSVG", "saveSVG", "round_random"
+        "initP5",
+        "initPaper",
+        "makeSVG",
+        "saveSVG",
+        "round_random",
+        "rebuildByMaxSegmentLength",
+        "drawPath"
     ],
     "variations": [
         {
             "name": "What if the drops were smaller, and only white?",
             "file": "1.js"
-        },{
-            "name": "What if the background was red?",
-            "file": "2.js"
         }
     ],
     "params": {
@@ -30,7 +33,10 @@
             "min": 1,
             "max": 70,
             "step": 0.1,
-            "value": [10,40]
+            "value": [
+                10,
+                40
+            ]
         }
     }
 }

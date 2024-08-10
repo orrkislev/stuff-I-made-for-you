@@ -11,9 +11,9 @@ function setup() {
     initP5(true)
     initMatter()
 
-    for (let i = 0; i < 5; i++) colors.push(lerpColor(color('red'), color('blue'), i / 5))
-    for (let i = 0; i < 5; i++) colors.push(lerpColor(color('blue'), color('yellow'), i / 5))
-    for (let i = 0; i < 5; i++) colors.push(lerpColor(color('yellow'), color('red'), i / 5))
+    for (i = 0; i < 5; i++) colors.push(lerpColor(color('red'), color('blue'), i / 5))
+    for (i = 0; i < 5; i++) colors.push(lerpColor(color('blue'), color('yellow'), i / 5))
+    for (i = 0; i < 5; i++) colors.push(lerpColor(color('yellow'), color('red'), i / 5))
 
     createCircle(width / 2, height / 2)
 }
@@ -24,16 +24,16 @@ function draw() {
 
     stroke(0)
     connections.forEach(c => {
-        const posA = c.bodyA.position
-        const posB = c.bodyB.position
+        posA = c.bodyA.position
+        posB = c.bodyB.position
         strokeWeight(c.thickness+10)
         line(posA.x, posA.y, posB.x, posB.y)
     })
 
     stroke(lineColor)
     connections.forEach(c => {
-        const posA = c.bodyA.position
-        const posB = c.bodyB.position
+        posA = c.bodyA.position
+        posB = c.bodyB.position
         strokeWeight(c.thickness)
         stroke(colors[c.bodyA.numInBranch % colors.length])
         line(posA.x, posA.y, posB.x, posB.y)
@@ -53,9 +53,9 @@ function keyPressed() {
 
 //: FILE Objects
 
-const vertices = []
+vertices = []
 function createCircle(x, y, connectTo) {
-    const newCircle = Bodies.circle(x, y, lineLength, {
+    newCircle = Bodies.circle(x, y, lineLength, {
         friction: 0,
         restitution: 0.1,
         density: 0.1,
@@ -70,10 +70,10 @@ function createCircle(x, y, connectTo) {
     if (connectTo) makeConnection(connectTo, newCircle)
 }
 
-const connections = []
+connections = []
 function makeConnection(a, b) {
-    const nextThickness = a.connections ? a.connections[0].thickness - .5 : 12
-    const constraint = Constraint.create({
+    nextThickness = a.connections ? a.connections[0].thickness - .5 : 12
+    constraint = Constraint.create({
         bodyA: a, bodyB: b,
         stiffness: 0.1,
         length: lineLength * 2
@@ -90,8 +90,8 @@ function makeConnection(a, b) {
 function grow() {
     if (vertices.length == 0) return
 
-    let nodeToGrow = null;
-    const nulls = vertices.filter(c => !c.connections)
+    nodeToGrow = null;
+    nulls = vertices.filter(c => !c.connections)
     if (nulls.length > 0) nodeToGrow = choose(nulls)
     else {
         shuffle(vertices, true)
@@ -100,8 +100,8 @@ function grow() {
     }
     if (nodeToGrow.connections && nodeToGrow.connections[0].thickness < 1) return
 
-    const newX = nodeToGrow.position.x + random(-10, 10)
-    const newY = nodeToGrow.position.y + random(-10, 10)
+    newX = nodeToGrow.position.x + random(-10, 10)
+    newY = nodeToGrow.position.y + random(-10, 10)
 
     createCircle(newX, newY, nodeToGrow)
 }

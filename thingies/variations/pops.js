@@ -17,20 +17,20 @@ function setup() {
 }
 
 async function buildImage() {
-    for (let i = 0; i < totalBalls; i++) {
+    for (i = 0; i < totalBalls; i++) {
         createBall()
         await timeout(10)
     }
 }
 
 function createBall(){
-const ballX = random(width * .45, width * .55)
-        const ballY = height/2
-        const ballSize = random(...ballSizeRange)
+ballX = random(width * .45, width * .55)
+        ballY = height/2
+        ballSize = random(...ballSizeRange)
         ball = new Ball(ballX, ballY, ballSize)
 
-        const ballForceX = random(-.01, .01)
-        const ballForceY = random(-.1, .1)
+        ballForceX = random(-.01, .01)
+        ballForceY = random(-.1, .1)
         ball.force(ballForceX, ballForceY)
 }
 
@@ -57,7 +57,7 @@ function draw() {
 
 //: FILE ball
 
-let explosions = []
+explosions = []
 class Explosion{
     constructor(x,y,color,size){
         this.pos = {x,y}
@@ -75,7 +75,7 @@ class Explosion{
         }
     }
 }
-let balls = []
+balls = []
 class Ball {
     constructor(x, y, r) {
         this.body = Matter.Bodies.circle(x, y, r)
@@ -94,8 +94,8 @@ class Ball {
         Matter.Body.applyForce(this.body, this.body.position, { x, y: -y })
     }
     show() {
-        let pos = this.body.position
-        let angle = this.body.angle * 180 / PI
+        var pos = this.body.position
+        var angle = this.body.angle * 180 / PI
 
         strokeWeight(this.body.circleRadius * 2)
         stroke(this.clr)

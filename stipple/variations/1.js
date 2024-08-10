@@ -15,20 +15,20 @@ function setup() {
 function draw() {
     loadPixels()
     mousePos = p(mouseX, mouseY)
-    for (let i = 0; i < 30000; i++) {
-        const x = random(width / 2 - area[0], width / 2 + area[0])
-        const y = random(height / 2 - area[1], height / 2 + area[1])
+    for (i = 0; i < 30000; i++) {
+        x = random(width / 2 - area[0], width / 2 + area[0])
+        y = random(height / 2 - area[1], height / 2 + area[1])
         doTheThing(x, y)
     }
     updatePixels()
 }
 
 function doTheThing(x, y) {
-    let pos = p(x, y)
-    const distToMouse = mousePos.getDistance(pos)
+    pos = p(x, y)
+    distToMouse = mousePos.getDistance(pos)
     if (distToMouse < blurSize) {
-        let dir = pos.subtract(mousePos)
-        const maxRotation = easeMap(easeInCubic, distToMouse, 0, blurSize, blurStrength, 0)
+        dir = pos.subtract(mousePos)
+        maxRotation = easeMap(easeInCubic, distToMouse, 0, blurSize, blurStrength, 0)
         dir = dir.rotate(random(-maxRotation, maxRotation))
         pos = mousePos.add(dir)
     }
