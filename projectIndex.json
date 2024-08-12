@@ -17,9 +17,9 @@
             "directory": "stipple"
         },
         {
-            "name": "Globe",
+            "name": "Revolve",
             "locked": true,
-            "directory": "globe"
+            "directory": "revolve"
         }
     ]
 }
