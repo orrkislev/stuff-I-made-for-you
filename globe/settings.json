@@ -1,0 +1,75 @@
+{
+    "libraries": [
+        "p5",
+        "paper"
+    ],
+    "locked": true,
+    "script": "main.js",
+    "snippets": [
+        "initP5",
+        "initPaper",
+        "timeout",
+        "choose"
+    ],
+    "variations": [
+        {
+            "name": "what if they could pop when the mouse runs over them?",
+            "file": "pops.js"
+        }
+    ],
+    "params": {
+        "stepSize": {
+            "name": "Step Size",
+            "type": "number",
+            "min": 3,
+            "max": 25,
+            "step": 0.1,
+            "value": 11
+        },
+        "thickness": {
+            "name": "Line Thickness",
+            "type": "number",
+            "min": 3,
+            "max": 25,
+            "step": 0.1,
+            "value": 9
+        },
+        "thresh": {
+            "name": "Holes",
+            "type": "number",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 0.4
+        },
+        "backgroundColor": {
+            "name": "Background Color",
+            "type": "color",
+            "value": "#EFaF9F"
+        },
+        "colors": {
+            "name": "Colors",
+            "type": "array",
+            "subtype": "color",
+            "value": [
+                "pink",
+                "seagreen",
+                "salmon",
+                "azure"
+            ]
+        },
+        "roundCap": {
+            "name": "Round Cap",
+            "type": "boolean",
+            "value": true
+        },
+        "globalSpeed": {
+            "name": "Speed",
+            "type": "number",
+            "value": 1,
+            "min": -2,
+            "max": 2,
+            "step": 0.01
+        }
+    }
+}

@@ -13,7 +13,6 @@ endsColor = 'yellow'
 backgroundColor = 'cornflowerblue'
 
 function setup() {
-    if (debugMode) console.log('setup')
     initP5(true)
     initMatter()
 }

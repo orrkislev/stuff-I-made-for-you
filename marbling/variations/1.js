@@ -5,11 +5,6 @@ function setup() {
     initP5(true)
     noStroke()
     fill(255)
-    if (debugMode) {
-        blendMode(BLEND)
-        noFill()
-        stroke(255, 0, 255)
-    }
 }
 
 function draw() {
@@ -79,12 +74,6 @@ class Drop {
             vertex(point.x, point.y)
         })
         endShape(CLOSE)
-
-        if (debugMode) {
-            for (i = 0; i < this.points.length; i += 10) {
-                ellipse(this.points[i].x, this.points[i].y, 2)
-            }
-        }
     }
 }
 //: FILE end

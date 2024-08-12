@@ -7,12 +7,19 @@
         {
             "name": "Growth",
             "directory": "growth"
-        },{
+        },
+        {
             "name": "Marbling",
             "directory": "marbling"
-        },{
+        },
+        {
             "name": "Stipple Blur",
             "directory": "stipple"
+        },
+        {
+            "name": "Globe",
+            "locked": true,
+            "directory": "globe"
         }
     ]
 }
