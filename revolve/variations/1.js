@@ -3,7 +3,7 @@
 stepSize = 11
 thickness = 9
 thresh = .4
-backgroundColor = '#EFaF9F'
+backgroundColor = 'black'
 colors = ["pink", "seagreen", "salmon", "azure"]
 roundCap = true
 globalSpeed = 1
@@ -11,6 +11,15 @@ globalSpeed = 1
 async function setup() {
     initP5(true)
     initPaper(false)
+
+    thresh = .65
+    createSphere(280).setColor('white').setSpeed(.3)
+    thresh = .45
+    createSphere(240).setColor('green').setSpeed(.3)
+    thresh = .35
+    createSphere(239).setColor('blue').setSpeed(.3)
+    
+    calcAllSections()
 }
 
 currBody = null
@@ -36,6 +45,30 @@ function mouseDragged() {
 
 //: FILE
 //. TITLE Element Creation
+
+function createCone(h = 200, r1 = 60, r2 = 60) {
+    return createBody(h, y => lerp(r1, r2, abs(y)))
+}
+
+function createSphere(r = 60) {
+    return createBody(r, y => {
+        const t = y * 2 - 1
+        const tr = t * r
+        return sqrt(r ** 2 - tr ** 2)
+    })
+}
+
+function createBody(h = 200, rfunc) {
+    const body = new Body()
+    h = floor(h / stepSize) * stepSize
+    noiseSeed(floor(random(1000)))
+    for (let y = -h; y <= h; y += stepSize) {
+        const r = rfunc((y + h) / (2 * h))
+        const thresh = abs(y / h) ** 1.5
+        createRing(body, y, r, thresh)
+    }
+    return body
+}
 
 function createRing(body, y, r) {
     const layer = new Layer()

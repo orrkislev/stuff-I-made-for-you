@@ -13,8 +13,11 @@
     ],
     "variations": [
         {
-            "name": "what if they could pop when the mouse runs over them?",
-            "file": "pops.js"
+            "name": "lets create a world map",
+            "file": "1.js"
+        }, {
+            "name": "Exploring more shapes - cylinders, spheres, and cones",
+            "file": "2.js"
         }
     ],
     "params": {

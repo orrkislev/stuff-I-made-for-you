@@ -1,35 +1,51 @@
-<title>Network Growth</title>
-<subtitle>Just click and behold</subtitle>
+<title>Cylinder Weaver</title>
+<subtitle>Interactive 3D-like Cylindrical Structures
+</subtitle>
 
 <card>
   <title>Introduction</title>
   <subtitle>What is this?</subtitle>
   <content>
-    <p>This code creates an interactive visualization of a growing network. It uses p5.js for graphics and Matter.js for
-      physics simulation.</p>
-    <p>The code handles drawing, growth logic, and physics interactions. It creates a dynamic, expanding network
-      structure
-      that responds to user input and evolves over time.</p>
+    <p>
+      This is an interactive creative coding sketch that generates 3D-like visualizations of cylindrical structures.
+      As you drag your mouse, it creates colorful, organic-looking cylinders that rotate and undulate, giving the
+      impression of woven or braided tubes.
+    </p>
   </content>
 </card>
+
+<card>
+  <subtitle>Key Features</subtitle>
+  <content>
+    <ul>
+      <li>Mouse-driven creation of cylindrical bodies</li>
+      <li>Organic, gap-filled ring structures</li>
+      <li>Rotating and undulating animations</li>
+      <li>Simple 3D-to-2D projection for depth effect</li>
+      <li>Color cycling through a predefined palette</li>
+    </ul>
+  </content>
+</card>
+
 
 <card>
   <title>How It Works</title>
 
   <content>
-    <p>The network consists of circles (vertices) connected by lines. Here's how it works:</p>
     <ul>
-      <li>Clicking the mouse adds a new circle at that location.</li>
-      <li>Every few frames, the network grows automatically:
-        <ul>
-          <li>It selects an existing circle</li>
-          <li>Creates a new circle nearby</li>
-          <li>Connects them with a line</li>
-        </ul>
-      </li>
-      <li>The network moves dynamically due to simulated physics</li>
-      <li>Circles with only one connection are drawn slightly larger</li>
-      <li>Pressing the spacebar pauses or resumes the animation</li>
+      <li>1. Mouse input creates "bodies" composed of circular rings</li>
+      <li>2. Rings are made of nodes arranged in a circular pattern</li>
+      <li>3. Perlin noise influences node positions, creating organic shapes and gaps</li>
+      <li>4. The structure rotates and animates with subtle undulation</li>
+      <li>5. Simple 3D-to-2D projection is used for rendering</li>
+      <li>6. Lines are drawn between nodes to form the cylindrical shape</li>
+      <li>7. Sections are sorted by depth for a basic 3D effect</li>
+      <li>8. Darker colors are applied to parts that appear to be "behind" others</li>
     </ul>
+
+    <p>
+      The result is a visually engaging, semi-3D effect that produces organic-looking cylindrical structures through
+      user interaction.
+    </p>
   </content>
 </card>
