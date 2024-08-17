@@ -18,7 +18,6 @@
         },
         {
             "name": "Revolve",
-            "locked": true,
             "directory": "revolve"
         }
     ]
