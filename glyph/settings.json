@@ -1,0 +1,104 @@
+{
+    "name": "marbling",
+    "description": "Marbling",
+    "libraries": [
+        "p5",
+        "paper"
+    ],
+    "script": "main.js",
+    "snippets": [
+        "initP5", "initPaper","choose","timeout"
+    ],
+    "variations": [{
+            "name": "what if you could move the nodes just by dragging them with the mouse?",
+            "file": "1.js"
+        },{
+            "name": "how can I animate the growth of the network?",
+            "file": "2.js"
+        },{
+            "name": "What if we draw the network like a star constellation?",
+            "file": "3.js"
+        }
+    ],
+    "params": {
+        "colors": {
+            "name": "Colors",
+            "type": "array",
+            "subtype": "color",
+            "value": ["#555","#333"]
+        },
+        "backgroundColor": {
+            "name": "Background",
+            "type": "color",
+            "value": "#aaa"
+        },
+        "networkLength": {
+            "name": "Length",
+            "type": "number",
+            "min": 3,
+            "max": 100,
+            "step": 1,
+            "value": 20
+        },
+        "hexGrid": {
+            "name": "Hex",
+            "type": "boolean",
+            "value": false
+        },
+        "maxGridSize": {
+            "name": "Max Grid Size",
+            "type": "number",
+            "min": 3,
+            "max": 30,
+            "value": 8
+        },
+        "maxVisits": {
+            "name": "Max Visits",
+            "type": "number",
+            "min": 0, "max": 5, "step": 1,
+            "value": 0
+        },
+        "nodeSize": {
+            "name": "Node Size",
+            "type": "number",
+            "min": 0, "max": 1, "step": 0.01,
+            "value": 0.66
+        },
+        "nodeVariety": {
+            "name": "Node Veriety",
+            "type": "number",
+            "min": 0, "max": 1, "step": 0.01,
+            "value": 0
+        },
+        "ang1": {
+            "name": "Angle 1",
+            "type": "number",
+            "min": -45, "max": 45, "step": 1,
+            "value": 0
+        },
+        "ang2": {
+            "name": "Angle 2",
+            "type": "number",
+            "min": -45, "max": 45, "step": 1,
+            "value": 0
+        },
+        "fullChance": {
+            "name": "Full Chance",
+            "type": "number",
+            "min": 0, "max": 1, "step": 0.01,
+            "value": 0.5
+        },
+        "holeChance": {
+            "name": "Hole Chance",
+            "type": "number",
+            "min": 0, "max": 1, "step": 0.01,
+            "value": 0.5
+        },
+        "random_seed": {
+            "name": "Seed",
+            "type": "number",
+            "min": 0, "max": 1000, "step": 1,
+            "value": 1
+        }
+    }
+}

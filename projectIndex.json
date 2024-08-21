@@ -19,6 +19,11 @@
         {
             "name": "Revolve",
             "directory": "revolve"
+        },
+        {
+            "name": "Glyph",
+            "locked": true,
+            "directory": "glyph"
         }
     ]
 }
