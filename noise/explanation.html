@@ -1,0 +1,70 @@
+<title>Noise Slices</title>
+<subtitle>Layered, natural-looking patterns</subtitle>
+
+<card>
+  <title>Key Parameters</title>
+
+  <content>
+    <ol>
+      <li><strong>slices:</strong> Determines the number of sections in the artwork.</li>
+      <li><strong>noiseScale:</strong> Affects the granularity of the Perlin noise used for point filtering.</li>
+      <li><strong>thresh:</strong> Influences the overall density of the patterns.</li>
+    </ol>
+
+    <p>The combination of Poisson Disc Sampling, Perlin noise, and randomized drawing functions results in a complex,
+      organic-looking texture that evolves over time. The use of sections with different properties creates distinct
+      areas within the artwork, adding depth and visual interest.</p>
+
+    <p>This sketch demonstrates an approach to creative coding that combines various algorithms and techniques to
+      produce a natural, flowing aesthetic.</p>
+  </content>
+</card>
+
+<card>
+  <title>Explanation</title>
+  <subtitle>How does it work?</subtitle>
+  <content>
+    <p>This sketch produces organic, textured patterns. Here's how it works:</p>
+
+    <h3>1. Setup</h3>
+    <ul>
+      <li>The sketch uses a combination of p5.js and Paper.js libraries.</li>
+      <li>It initializes a canvas and sets up the drawing environment.</li>
+    </ul>
+
+    <h3>2. Point Generation</h3>
+    <ul>
+      <li>Uses Poisson Disc Sampling to generate a set of evenly distributed points across the canvas.</li>
+      <li>These points serve as the foundation for the patterns.</li>
+    </ul>
+
+    <h3>3. Section Creation</h3>
+    <ul>
+      <li>The canvas is divided into multiple sections (defined by the 'slices' parameter).</li>
+      <li>Each section has its own properties, including a threshold range and a drawing function.</li>
+    </ul>
+
+    <h3>4. Drawing Process</h3>
+    <ul>
+      <li>For each frame, the sketch iterates through the sections.</li>
+      <li>Points within each section are filtered based on Perlin noise and the section's threshold.</li>
+      <li>The remaining points are then drawn using the section's specific drawing function.</li>
+    </ul>
+
+    <h3>5. Drawing Functions</h3>
+    <ul>
+      <li>There are two main drawing functions:
+        <ul>
+          <li>point_random: Creates small clusters of random points.</li>
+          <li>line_noise: Draws lines with angles determined by Perlin noise.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>6. Noise Layer</h3>
+    <ul>
+      <li>A separate graphics layer adds a subtle noise texture to the entire image.</li>
+    </ul>
+  </content>
+</card>
+

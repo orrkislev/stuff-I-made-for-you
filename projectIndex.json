@@ -24,6 +24,11 @@
             "name": "Glyph",
             "locked": true,
             "directory": "glyph"
+        },
+        {
+            "name": "Noise Slices",
+            "locked": false,
+            "directory": "noise"
         }
     ]
 }
