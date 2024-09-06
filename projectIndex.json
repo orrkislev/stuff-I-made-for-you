@@ -14,10 +14,12 @@
         },
         {
             "name": "Stipple Blur",
+            "locked": true,
             "directory": "stipple"
         },
         {
             "name": "Revolve",
+            "locked": true,
             "directory": "revolve"
         },
         {
@@ -29,6 +31,11 @@
             "name": "Noise Slices",
             "locked": false,
             "directory": "noise"
+        },
+        {
+            "name": "Mecha",
+            "locked": false,
+            "directory": "mecha"
         }
     ]
 }

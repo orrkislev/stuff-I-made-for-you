@@ -1,0 +1,60 @@
+{
+    "name": "genuary-physics",
+    "description": "Physics simulation for Genuary 2023",
+    "libraries": [
+        "three"
+    ],
+    "script": "main.js",
+    "snippets": [
+        "random", "lerp", "choose"
+    ],
+    "variations": [{
+            "name": "what if the boxes would animate, morphing the overall shape?",
+            "file": "1.js"
+        },{
+            "name": "what about tables?",
+            "file": "2.js"
+        }],
+    "params": {
+        "backgroundColor": {
+            "name": "Background Color",
+            "type": "color",
+            "value": "white"
+        },
+
+        "boxColor": {
+            "name": "Box Color",
+            "type": "color",
+            "value": "beige"
+        },
+
+        "bubbleColor": {
+            "name": "Bubble Color",
+            "type": "color",
+            "value": "black"
+        },
+        "shadowColor": {
+            "name": "Shadow Color",
+            "type": "color",
+            "value": "#112244"
+        },
+
+        "boxCount": {
+            "name": "Total Boxes",
+            "type": "number",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 20
+        },
+
+        "bubbleCount": {
+            "name": "Total Bubbles",
+            "type": "number",
+            "min": 20,
+            "max": 1000,
+            "step": 1,
+            "value": 100
+        }
+    }
+}
