@@ -29,13 +29,17 @@
         },
         {
             "name": "Noise Slices",
-            "locked": false,
+            "locked": true,
             "directory": "noise"
         },
         {
             "name": "Mecha",
             "locked": false,
             "directory": "mecha"
+        },{
+            "name": "Tribal",
+            "locked": false,
+            "directory": "tribal"
         }
     ]
 }
