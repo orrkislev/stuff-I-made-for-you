@@ -2,44 +2,53 @@
     "projects": [
         {
             "name": "Friendly Thingies",
-            "directory": "thingies"
+            "directory": "thingies",
+            "tags": ["p5.js","generative","animation","interactive","genuary","matter.js"]
         },
         {
             "name": "Growth",
-            "directory": "growth"
+            "directory": "growth",
+            "tags": ["p5","generative","animation","matter.js","interactive"]
         },
         {
             "name": "Marbling",
-            "directory": "marbling"
+            "directory": "marbling",
+            "tags": ["p5","art","plottable","interactive"]
         },
         {
             "name": "Stipple Blur",
             "locked": true,
-            "directory": "stipple"
+            "directory": "stipple",
+            "tags": ["p5","generative","interactive","typography","2d"]
         },
         {
             "name": "Revolve",
             "locked": true,
-            "directory": "revolve"
+            "directory": "revolve",
+            "tags": ["p5","animation","interactive","3d","2d"]
         },
         {
             "name": "Glyph",
             "locked": true,
-            "directory": "glyph"
+            "directory": "glyph",
+            "tags": ["p5","design","interactive","typography","2d"]
         },
         {
             "name": "Noise Slices",
             "locked": true,
-            "directory": "noise"
+            "directory": "noise",
+            "tags": ["p5","generative","animation","interactive","2d","pattern"]
         },
         {
             "name": "Mecha",
             "locked": false,
-            "directory": "mecha"
+            "directory": "mecha",
+            "tags": ["three.js","generative","animation","interactive","3d"]
         },{
             "name": "Tribal",
             "locked": false,
-            "directory": "tribal"
+            "directory": "tribal",
+            "tags": ["p5.js","drawing","2d","generative","pattern"]
         }
     ]
 }
