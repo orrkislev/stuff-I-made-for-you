@@ -8,36 +8,36 @@
         {
             "name": "Growth",
             "directory": "growth",
-            "tags": ["p5","generative","animation","matter.js","interactive"]
+            "tags": ["p5.js","generative","animation","matter.js","interactive"]
         },
         {
             "name": "Marbling",
             "directory": "marbling",
-            "tags": ["p5","art","plottable","interactive"]
+            "tags": ["p5.js","art","plottable","interactive"]
         },
         {
             "name": "Stipple Blur",
             "locked": true,
             "directory": "stipple",
-            "tags": ["p5","generative","interactive","typography","2d"]
+            "tags": ["p5.js","generative","interactive","typography","2d"]
         },
         {
             "name": "Revolve",
             "locked": true,
             "directory": "revolve",
-            "tags": ["p5","animation","interactive","3d","2d"]
+            "tags": ["p5.js","animation","interactive","3d","2d"]
         },
         {
             "name": "Glyph",
             "locked": true,
             "directory": "glyph",
-            "tags": ["p5","design","interactive","typography","2d"]
+            "tags": ["p5.js","design","interactive","typography","2d"]
         },
         {
             "name": "Noise Slices",
             "locked": true,
             "directory": "noise",
-            "tags": ["p5","generative","animation","interactive","2d","pattern"]
+            "tags": ["p5.js","generative","animation","interactive","2d","pattern"]
         },
         {
             "name": "Mecha",
