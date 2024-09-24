@@ -1,0 +1,76 @@
+{
+    "libraries": [
+        "p5",
+        "kdbush"
+    ],
+    "locked": true,
+    "script": "main.js",
+    "snippets": [
+        "initP5", "GenericParticleClass","random", "timeout"
+    ],
+    "variations": [
+        {
+            "name": "lets add gravity, and 'condensation'",
+            "file": "1.js"
+        }, {
+            "name": "Pebble Pattern Pop",
+            "file": "2.js"
+        },{
+            "name": "what if the shapes are only outline, and they want to move like their neighbors?",
+            "file": "3.js"
+        }
+    ],
+    "params": {
+        "blobSize": {
+            "name": "Blob Size",
+            "type": "number",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "value": 8
+        },
+        "blurSize": {
+            "name": "blur Size",
+            "type": "number",
+            "min": 0,
+            "max": 12,
+            "step": 0.1,
+            "value": 6
+        },
+        "threshold": {
+            "name": "threshold",
+            "type": "number",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 0.4
+        },
+        "border": {
+            "name": "border",
+            "type": "number",
+            "min": 0,
+            "max": 500,
+            "step": 10,
+            "value": 250
+        },
+        "dotsPerFamily": {
+            "name": "Dots Per Color",
+            "type": "number",
+            "min": 50,
+            "max": 1000,
+            "step": 10,
+            "value": 300
+        },
+        "backgroundColor": {
+            "name": "Background",
+            "type": "color",
+            "value": "#333"
+        },
+        "families": {
+            "name": "Colors",
+            "type": "array",
+            "subtype": "color",
+            "value": ["pink","white33"]
+        }
+    }
+}

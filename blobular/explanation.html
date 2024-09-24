@@ -1,0 +1,49 @@
+<title>Blobular Flow</title>
+<subtitle>Study in Fluid Particles</subtitle>
+</subtitle>
+
+<card>
+  <title>Introduction</title>
+  <subtitle>What is it?</subtitle>
+  <content>
+    <p>
+      Blobular Flow is a creative coding sketch that simulates the behavior of particle systems, visualizing them as organic, blob-like entities. The sketch features two families of particles, represented by pink and white blobs, that interact with each other and their environment in a fluid, dynamic manner.
+
+      <div><strong>Mouse Movement:</strong> Move your cursor around the sketch. Particles will be repelled from your mouse, creating dynamic interactions with the blobs.</div>
+      <div><strong>Edges:</strong> Observe how particles bounce off the edges of the canvas, maintaining a border around the sketch.</div>
+    </p>
+  </content>
+</card>
+
+<card>
+  <subtitle>How it works?</subtitle>
+  <content>
+    <div><strong>Particle System:</strong> The core of the sketch is a particle system where each dot is an instance of the Dot class.</div>
+    <div><strong>Spatial Indexing:</strong> A KD-Bush spatial index is used for efficient neighbor lookups.</div>
+    <div><strong>Forces:</strong> Particles are subject to various forces:</div>
+    <ul>
+      <li>- Attraction/repulsion between particles</li>
+      <li>- Repulsion from the mouse cursor</li>
+      <li>- A slight rotational force towards the center</li>
+    </ul>
+    <div><strong>Visualization:</strong> Particles are rendered as circles, then processed with blur and threshold filters to create the blob effect.</div>
+  </content>
+</card>
+
+
+<card>
+  <subtitle>Main Parameters</subtitle>
+  <content>
+    <ul>
+      <li>blobSize (default: 8): Controls the size of individual particles before blurring.</li>
+      <li>blurSize (default: 6): Determines the amount of blur applied to the particle rendering.</li>
+      <li>threshold (default: 0.4): Sets the cutoff point for the threshold filter, affecting blob shape and size.</li>
+      <li>border (default: 250): Defines the invisible boundary from the edge of the canvas.</li>
+      <li>backgroundColor (default: '#333'): Sets the background color of the sketch.</li>
+      <li>families (default: ['pink', 'white']): Defines the colors of the two particle families.</li>
+      <li>dotsPerFamily (default: 100): Sets the number of particles in each family.</li>
+  </ul>
+
+    Adjusting these parameters can dramatically change the appearance and behavior of the Blobular Flow, allowing for a wide range of visual effects and interactions.
+  </content>
+</card>
