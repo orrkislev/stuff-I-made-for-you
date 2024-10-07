@@ -1,0 +1,74 @@
+{
+    "name": "genuary-physics",
+    "description": "Physics simulation for Genuary 2023",
+    "libraries": [
+        "matter",
+        "p5"
+    ],
+    "script": "main.js",
+    "snippets": [
+        "initP5", "initMatter","timeout", "choose", "round_random"
+    ],
+    "variations": [{
+            "name": "what if they could pop when the mouse runs over them?",
+            "file": "pops.js"
+        }, {
+            "name": "what if they were too big to fit the screen?",
+            "file": "eyes.js"
+        }, {
+            "name": "What if we only drew connections between the close-enough balls?",
+            "file": "abstract.js"
+        }],
+    "params": {
+        "ballSizeRange": {
+            "name": "Ball Size Range",
+            "type": "range",
+            "min": 5,
+            "max": 100,
+            "step": 1,
+            "value": [10,60]
+        },
+
+        "totalBalls": {
+            "name": "Total Balls",
+            "type": "number",
+            "min": 20,
+            "max": 1000,
+            "step": 1,
+            "value": 100
+        },
+
+        "colors": {
+            "name": "Colors",
+            "type": "array",
+            "subtype": "color",
+            "value": [
+                "pink",
+                "seagreen",
+                "salmon",
+                "azure"
+            ]
+        },
+
+        "eyeSize": {
+            "name": "Eye Size",
+            "type": "number",
+            "min": 1,
+            "max": 20,
+            "step": 1,
+            "value": 4
+        },
+
+        "eyeColor": {
+            "name": "Eye Color",
+            "type": "color",
+            "value": "#000000"
+        },
+
+        "backgroundColor": {
+            "name": "Background Color",
+            "type": "color",
+            "value": "darkgray"
+        }
+    }
+}

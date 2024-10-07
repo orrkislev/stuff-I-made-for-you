@@ -1,8 +1,8 @@
 //: FILE main
-const blobSize = 12
-const blurSize = 8
-const threshold = .3
-const border = 200
+blobSize = 12
+blurSize = 8
+threshold = .3
+border = 200
 
 backgroundColor = 'midnightblue'
 const families = ['gold', 'tomato']
