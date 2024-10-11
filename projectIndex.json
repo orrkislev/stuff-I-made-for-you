@@ -55,5 +55,11 @@
             "directory": "blobular",
             "tags": ["p5.js","animation","2d","simulation","interactive"]
         }
+    ],
+    "tutorials": [
+        {
+            "name": "fake 3D Circles",
+            "directory": "ellipse"
+        }
     ]
 }
