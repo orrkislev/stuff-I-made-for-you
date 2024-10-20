@@ -51,9 +51,14 @@
             "tags": ["p5.js","drawing","2d","generative","pattern"]
         },{
             "name": "Blobular",
-            "locked": false,
+            "locked": true,
             "directory": "blobular",
             "tags": ["p5.js","animation","2d","simulation","interactive"]
+        },{
+            "name": "Lens",
+            "locked": false,
+            "directory": "lens",
+            "tags": ["three.js","interactive","3d","typography"]
         }
     ],
     "tutorials": [
