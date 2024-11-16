@@ -47,7 +47,7 @@ function mouseDragged() {
 
 
 //: FILE
-//. TITLE Element Creation
+//.title Element Creation
 
 function createCone(h = 200, r1 = 60, r2 = 60) {
     return createBody(h, y => lerp(r1, r2, abs(y)))
@@ -98,7 +98,7 @@ function createRing(body, y, r) {
 //: FILE end
 
 //: FILE 
-//. TITLE Main Animation Loop
+//.title Main Animation Loop
 
 allSections = []
 function calcAllSections() {

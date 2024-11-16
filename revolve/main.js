@@ -34,8 +34,7 @@ function mouseDragged() {
 //: FILE end
 
 
-//: FILE
-//. TITLE Element Creation
+//: FILE Element_Creation
 
 function createRing(body, y, r) {
     const layer = new Layer()
@@ -61,8 +60,7 @@ function createRing(body, y, r) {
 
 //: FILE end
 
-//: FILE 
-//. TITLE Main Animation Loop
+//: FILE Main_Animation_Loop
 
 allSections = []
 function calcAllSections() {
