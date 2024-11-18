@@ -3,6 +3,7 @@
         {
             "name": "Friendly Thingies",
             "directory": "thingies",
+            "open":true,
             "tags": ["p5.js","generative","animation","interactive","genuary","matter.js"]
         },
         {
@@ -17,46 +18,38 @@
         },
         {
             "name": "Stipple Blur",
-            "locked": true,
             "directory": "stipple",
             "tags": ["p5.js","generative","interactive","typography","2d"]
         },
         {
             "name": "Revolve",
-            "locked": true,
             "directory": "revolve",
             "tags": ["p5.js","animation","interactive","3d","2d"]
         },
         {
             "name": "Glyph",
-            "locked": true,
             "directory": "glyph",
             "tags": ["p5.js","design","interactive","typography","2d"]
         },
         {
             "name": "Noise Slices",
-            "locked": true,
             "directory": "noise",
             "tags": ["p5.js","generative","animation","interactive","2d","pattern"]
         },
         {
             "name": "Mecha",
-            "locked": true,
             "directory": "mecha",
             "tags": ["three.js","generative","animation","interactive","3d"]
         },{
             "name": "Tribal",
-            "locked": true,
             "directory": "tribal",
             "tags": ["p5.js","drawing","2d","generative","pattern"]
         },{
             "name": "Blobular",
-            "locked": true,
             "directory": "blobular",
             "tags": ["p5.js","animation","2d","simulation","interactive"]
         },{
             "name": "Lens",
-            "locked": false,
             "directory": "lens",
             "tags": ["three.js","interactive","3d","typography"]
         }
