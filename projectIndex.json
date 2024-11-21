@@ -52,6 +52,10 @@
             "name": "Lens",
             "directory": "lens",
             "tags": ["three.js","interactive","3d","typography"]
+        },{
+            "name":"Noodle",
+            "directory":"noodle",
+            "tags":["p5.js","design","animation","2d"]
         }
     ],
     "tutorials": [
