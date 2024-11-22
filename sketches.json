@@ -28,6 +28,10 @@
             "name": "3D random walker",
             "description": "A random walker, but in 3D",
             "url": "https://editor.p5js.org/orrkislev/sketches/nnuU5vRmZ"
+        }, {
+            "name":"Liquid",
+            "description":"WCCC Liquid",
+            "directory":"liquid"
         }
     ]
 }

@@ -1,0 +1,9 @@
+{
+    "libraries": [
+        "p5"
+    ],
+    "script": "liquid.js",
+    "snippets": [
+        "initP5", "timeout"
+    ]
+}
