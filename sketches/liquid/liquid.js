@@ -13,7 +13,7 @@ async function makeImage() {
     background('beige')
     translate(width / 2, height / 2)
 
-    maxR = width * .4
+    maxR = width * .25
 
     for (let r = width / 2; r > 0; r -= 1) {
         const fade = 1 - (r / maxR) ** 3
