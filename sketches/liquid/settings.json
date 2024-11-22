@@ -5,5 +5,12 @@
     "script": "liquid.js",
     "snippets": [
         "initP5", "timeout"
+    ],
+    "title": "WCCC - Liquid",
+    "description": [
+        "Liquid simulation using p5.js",
+        "This sketch, titled 'WCCC - Liquid,' is a mesmerizing liquid simulation created using the p5.js library. The simulation generates intricate ripple patterns that mimic the behavior of liquid surfaces. By manipulating parameters such as ripple frequency and height, the sketch produces dynamic and visually captivating effects that resemble the natural movement of water.",
+        "The core of the sketch involves generating ripples that propagate across the canvas. These ripples are created by calculating sine and cosine functions, which determine the position and movement of each point on the canvas. The sketch uses a combination of noise functions and color modes to add depth and realism to the ripples, resulting in a fluid and organic appearance. The use of HSB (Hue, Saturation, Brightness) color mode allows for smooth transitions and variations in color, enhancing the visual appeal of the simulation.",
+        "Additionally, the sketch incorporates asynchronous functions to create a smooth and continuous animation. By using the 'await' keyword, the sketch ensures that each frame is rendered sequentially, preventing any abrupt changes or interruptions in the animation. This attention to detail and careful handling of timing contribute to the overall fluidity and realism of the liquid simulation, making it a captivating piece of digital art."
     ]
 }
