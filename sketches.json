@@ -32,6 +32,10 @@
             "name":"Liquid",
             "description":"WCCC Liquid",
             "directory":"liquid"
+        }, {
+            "name":"Void",
+            "description":"WCCC Void",
+            "directory":"void"
         }
     ]
 }

@@ -1,0 +1,17 @@
+{
+    "libraries": [
+        "p5", "ml5"
+    ],
+    "script": "void.js",
+    "snippets": [
+        "initP5", "initFaceApi", "gradients"
+    ],
+    "title": "WCCC - Void",
+    "description": [
+        "The stars scatter across the void, suspended in an endless, silent dance. Their light glimmers faintly, a fragile contrast to the infinite darkness that cradles them.",
+        "A pale moon rises, carving soft shadows into the void below. Its glow touches the rolling hills, revealing faint figures—wanderers who drift through the night, bathing in its gentle light.",
+        "The void shifts when you draw near. The stars tremble, rearranging themselves as if compelled by your presence, breaking their timeless stillness.",
+        "The wanderers notice the disturbance. They hesitate, then retreat into the void, as if fleeing from something unspoken—something they've always feared might awaken.",
+        "And as the void stares back, it holds a truth that can only be found by looking closely."
+    ]
+}
