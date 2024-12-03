@@ -21,7 +21,7 @@ function mouseReleased() {
 function keyPressed() {
     if (key == 's') saveSVG()
 }
-//:FILE end
+
 
 //:FILE Drop
 drops = []
@@ -76,4 +76,3 @@ class Drop {
         endShape(CLOSE)
     }
 }
-//:FILE end

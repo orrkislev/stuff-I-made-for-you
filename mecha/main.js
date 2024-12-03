@@ -73,7 +73,7 @@ const outlineMaterial = new THREE.ShaderMaterial({
     side: THREE.BackSide
 });
 
-//:FILE end
+
 
 
 //:FILE main
@@ -108,7 +108,7 @@ function animate() {
 }
 animate();
 
-//:FILE end
+
 
 //:FILE helpers
 //.description helper functions that create the boxes, each with its own shadow and outline elements, bubbles and mirror stuff
@@ -198,7 +198,7 @@ function makeMirrorMesh(mesh){
     return mirror
 }
 
-//:FILE end
+
 
 //:FILE hidden
 //.hidden true
@@ -219,4 +219,4 @@ const realWindow = window.parent || window;
 realWindow.addEventListener( 'mousedown',   controls._onMouseDown, false );
 realWindow.addEventListener( 'pointerup',   controls._onPointerUp, false );
 realWindow.addEventListener( 'mousemove',   controls._onMouseMove, false );
-//:FILE end
+

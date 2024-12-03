@@ -1,4 +1,4 @@
-//: HTML
+//:HTML
 <h2 class="text-2xl font-semibold mb-4 text-indigo-600">10. Finishing Touches I: Smooth Movement</h2>
 <p class="mb-4">Let's add some smoothness to our cosmic dance! We'll use interpolation to create a more fluid movement of our ellipses. It's like our constellation is floating in zero gravity!</p>
 <div class="bg-white px-4 rounded-lg shadow-md text-xs">
@@ -8,7 +8,7 @@
         <li><code class="bg-gray-200 px-1 rounded">rotate(lookPos.heading())</code>: We now rotate based on the interpolated position.</li>
     </ul>
 </div>
-//: JS
+//:JS
 background(0)
 stroke(255, 255, 0)
 noFill()

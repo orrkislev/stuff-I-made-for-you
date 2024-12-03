@@ -42,7 +42,7 @@ function draw() {
 }
 
 
-//:FILE end
+
 
 //:FILE Sections
 //.description This area contains the code for the sections
@@ -77,7 +77,7 @@ function drawSection(threshMin, threshMax, radius, drawFunc) {
     _points.forEach(pos => drawFunc(pos.x, pos.y))
 }
 
-//:FILE end
+
 
 //:FILE Drawing_functions
 //.description Functions to draw different types of noise based shapes
@@ -112,7 +112,7 @@ function lineFromAngle(x, y, a, l) {
     line(x - l * cos(a) / 2, y - l * sin(a) / 2, x + l * cos(a) / 2, y + l * sin(a) / 2)
 }
 
-//:FILE end
+
 
 //:FILE Other
 
@@ -133,7 +133,7 @@ function grungeLayer() {
     image(grungeLayerGraphics, 0, 0)
 }
 
-//:FILE end
+
 
 //:FILE 
 //.hidden true
@@ -146,4 +146,3 @@ function updateParams() {
         grungeLayerGraphics = null
     }
 }
-//:FILE end

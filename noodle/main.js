@@ -53,7 +53,7 @@ async function actuallyDrawSomething() {
     await noodle.drawLight()
 }
 
-//:FILE end
+
 
 //:FILE Noodle
 //.description Define the Noodle class and its methods for drawing the noodle and its light effects
@@ -132,4 +132,3 @@ class Noodle {
         }
     }
 }
-//:FILE end

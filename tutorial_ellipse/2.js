@@ -1,4 +1,4 @@
-//: HTML
+//:HTML
 <h2 class="text-2xl font-semibold mb-4 text-indigo-600">2. Rotating the Ellipse</h2>
 <p class="mb-4">Now we're making things interactive! The ellipse will now rotate to follow your mouse. It's like the ellipse is curiously watching your cursor move around the canvas.</p>
 <div class="bg-white px-4 rounded-lg shadow-md text-xs">
@@ -10,7 +10,7 @@
     </ul>
 </div>
 
-//: JS
+//:JS
 const dirVector = V(mouseX - width / 2, mouseY - height / 2)
 const ang = dirVector.heading()
 rotate(ang)

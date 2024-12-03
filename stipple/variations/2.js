@@ -41,7 +41,7 @@ function draw() {
     updatePixels()
 }
 
-//:FILE end
+
 
 //:FILE Graphics
 //.title Graphics Buffer
@@ -69,4 +69,3 @@ function updateGraphics(){
     grph.text(lastKey, 0, 0)
 }
 
-//:FILE end

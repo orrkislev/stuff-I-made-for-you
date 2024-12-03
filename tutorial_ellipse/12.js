@@ -1,4 +1,4 @@
-//: HTML
+//:HTML
 <h2 class="text-2xl font-semibold mb-4 text-indigo-600">12. Finishing Touches III: Dynamic Movement</h2>
 <p class="mb-4">Finally, let's set our cosmic dance in motion! We're adding sinusoidal movement to each ellipse, creating a hypnotic, pulsating effect. It's like watching a galaxy breathe!</p>
 <div class="bg-white px-4 rounded-lg shadow-md text-xs">
@@ -9,7 +9,7 @@
         <li>The use of <code class="bg-gray-200 px-1 rounded">frameCount</code> ensures continuous animation.</li>
     </ul>
 </div>
-//: JS
+//:JS
 background(0)
 stroke(255, 255, 0)
 noFill()

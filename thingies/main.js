@@ -34,7 +34,7 @@ function draw() {
     Matter.Engine.update(engine, 0.1, .1)
     balls.forEach(ball => ball.show())
 }
-//:FILE end
+
 
 //:FILE ball.js
 
@@ -90,4 +90,3 @@ function createBall(x, y) {
     ballForceY = random(-.1, .1)
     ball.force(ballForceX, ballForceY)
 }
-//:FILE end

@@ -53,7 +53,7 @@ function draw() {
     balls = balls.filter(b=>!b.shouldRemove)
     explosions = explosions.filter(b=>!b.shouldRemove)
 }
-//:FILE end
+
 
 //:FILE ball
 
@@ -128,4 +128,3 @@ class Ball {
         this.lastPos = { x: pos.x, y: pos.y }
     }
 }
-//:FILE end

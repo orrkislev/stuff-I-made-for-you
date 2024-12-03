@@ -25,7 +25,7 @@ async function makeImage() {
     await fillGrid()
     for (let i = 0; i < eyeCount; i++) makeEye()
 }
-//:FILE end
+
 
 //:FILE grid_functions
 function initGrid() {
@@ -54,7 +54,7 @@ async function fillGrid() {
         await timeout()
     }
 }
-//:FILE end
+
 
 //:FILE cell_functions
 function makeCell(x, y) {
@@ -182,7 +182,7 @@ function drawCell(x, y, cell) {
     connections.forEach(drawConnection)
 }
 
-//:FILE end
+
 
 //:FILE misc_functions
 
@@ -198,7 +198,7 @@ function makeEye() {
 
     drawEye(posX + cellWidth / 2, posY + cellHeight / 2, cellWidth, cellHeight)
 }
-//:FILE end
+
 
 //:FILE drawing_functions
 
@@ -253,7 +253,7 @@ function myCircle(x, y, r) {
 }
 
 
-//:FILE end
+
 
 //:FILE hidden
 //.hidden true
@@ -281,4 +281,3 @@ function myCircle(x, y, r) {
 // }
 
 
-//:FILE end

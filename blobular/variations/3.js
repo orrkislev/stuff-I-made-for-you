@@ -52,7 +52,7 @@ function showCompound(family) {
 
     image(paintGraphics, 0, 0)
 }
-//:FILE end
+
 
 //:FILE Dot_Class
 const allDots = []
@@ -85,7 +85,7 @@ class Dot extends GenericParticleClass {
         }
     }
 }
-//:FILE end
+
 
 //:FILE filters
 function blurFilter(graphics, size) {
@@ -162,4 +162,3 @@ function outlineFilter(graphics) {
     graphics.clear()
     graphics.image(filterGraphics, 0, 0);
 }
-//:FILE end

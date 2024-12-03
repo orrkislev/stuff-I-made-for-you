@@ -36,7 +36,7 @@ function draw() {
         for (let y = 0; y < rows; y++)
             drawCell(x, y, grid[x + ',' + y])
 }
-//:FILE end
+
 
 //:FILE grid_functions
 function initGrid() {
@@ -79,7 +79,7 @@ function fillGrid() {
         makeCell(allPositions[i][0], allPositions[i][1])
     }
 }
-//:FILE end
+
 
 //:FILE cell_functions
 function makeCell(x, y) {
@@ -214,7 +214,7 @@ function drawCell(x, y, cell) {
     cell.connections.forEach(drawConnection)
 }
 
-//:FILE end
+
 
 //:FILE misc_functions
 
@@ -230,7 +230,7 @@ function makeEye() {
 
     drawEye(posX + cellWidth / 2, posY + cellHeight / 2, cellWidth, cellHeight)
 }
-//:FILE end
+
 
 //:FILE drawing_functions
 
@@ -261,7 +261,7 @@ function drawEye(x, y, w, h) {
     pop()
 }
 
-//:FILE end
+
 
 //:FILE hidden
 //.hidden true
@@ -288,4 +288,3 @@ function drawEye(x, y, w, h) {
 // }
 
 
-//:FILE end

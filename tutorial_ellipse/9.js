@@ -1,4 +1,4 @@
-//: HTML
+//:HTML
 <h2 class="text-2xl font-semibold mb-4 text-indigo-600">9. The Aura: A Constellation of Glowing Ellipses</h2>
 <p class="mb-4">For our grand finale, we're creating a cosmic dance of glowing ellipses! Multiple ellipses of different sizes move together, creating a mesmerizing aura. Move your mouse and watch your very own constellation come to life!</p>
 <div class="bg-white px-4 rounded-lg shadow-md text-xs">
@@ -9,7 +9,7 @@
         <li><code class="bg-gray-200 px-1 rounded">translate(zOffset * (1 - ratio), 0)</code>: This line within the function creates the 3D effect for each ellipse.</li>
     </ul>
 </div>
-//: JS
+//:JS
 background(0)
 stroke(255, 255, 0)
 noFill()

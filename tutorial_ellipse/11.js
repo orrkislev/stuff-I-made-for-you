@@ -1,4 +1,4 @@
-//: HTML
+//:HTML
 <h2 class="text-2xl font-semibold mb-4 text-indigo-600">11. Finishing Touches II: FX</h2>
 <p class="mb-4">
     Time to make our ellipses pop! We've added a soft fill glow, and small arcs act as highlight, like a lens flare in space.
@@ -11,7 +11,7 @@
         <li><code class="bg-gray-200 px-1 rounded">fill(255, 255, 0, 20)</code>: Adds a subtle yellow fill to each ellipse.</li>
     </ul>
 </div>
-//: JS
+//:JS
 background(0)
 stroke(255, 255, 0)
 noFill()

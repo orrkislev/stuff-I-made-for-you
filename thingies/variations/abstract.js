@@ -51,7 +51,7 @@ function draw() {
     fill(0)
     balls.forEach(ball => circle(ball.body.position.x, ball.body.position.y, 3));
 }
-//:FILE end
+
 
 //:FILE ball
 
@@ -71,4 +71,3 @@ class Ball {
     }
 }
 
-//:FILE end

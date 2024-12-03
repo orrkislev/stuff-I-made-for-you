@@ -1,4 +1,4 @@
-//: HTML
+//:HTML
 <h2 class="text-2xl font-semibold mb-4 text-indigo-600">6. Perfecting the 3D Illusion</h2>
 <p class="mb-4">
     Now we're fine-tuning our 3D effect. The second ellipse will move realistically in front of the first one.
@@ -11,7 +11,7 @@
         <li><code class="bg-gray-200 px-1 rounded">translate(zOffset * (1 - ratio), 0)</code>: This line is crucial! It adjusts the position based on the viewing angle.</li>
     </ul>
 </div>
-//: JS
+//:JS
 noFill()
 
 const dirVector = V(mouseX - width / 2, mouseY - height / 2)

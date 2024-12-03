@@ -36,7 +36,7 @@ function doTheThing(x, y) {
     set(x, y, grph.get(pos.x, pos.y))
 }
 
-//:FILE end
+
 
 //:FILE Graphics
 //.title Graphics Buffer
@@ -61,4 +61,3 @@ function putText(letter) {
     area = [textWidth(letter) / 2 + 20, 320]
 }
 
-//:FILE end

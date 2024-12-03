@@ -40,7 +40,7 @@ function draw() {
     Matter.Engine.update(engine, 0.1, .1)
     balls.forEach(ball => ball.show())
 }
-//:FILE end
+
 
 //:FILE ball
 balls = []
@@ -99,4 +99,3 @@ class Ball {
         this.lastPos = { x: pos.x, y: pos.y }
     }
 }
-//:FILE end

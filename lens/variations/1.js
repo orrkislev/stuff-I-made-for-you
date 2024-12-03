@@ -45,7 +45,7 @@ function initLights() {
     scene.add(light);
 }
 
-//:FILE end
+
 
 //:FILE lenses
 //.description Create the lens materials and the lenses (squished spheres)
@@ -86,7 +86,7 @@ function updateLenses(){
         lens.position.z = z
     })
 }
-//:FILE end
+
 
 //:FILE Text
 //.description Create a text mesh with a given font
@@ -126,7 +126,7 @@ function createText() {
     if (!theFont) fontLoader.load(fontUrl, placeText)
     else placeText(theFont)
 }
-//:FILE end
+
 
 //:FILE camera
 //.description Update the camera position based on the mouse position
@@ -155,7 +155,7 @@ function updateCamera() {
     camera.position.y = -20 + mouseY * 40;
     camera.lookAt(0, 0, 0);
 }
-//:FILE end
+
 
 
 //:FILE run
@@ -176,7 +176,7 @@ function animate() {
     renderer.render(scene, camera);
 }
 start()
-//:FILE end
+
 
 //:FILE hidden
 //.hidden true
@@ -219,4 +219,4 @@ window.updateParams = (params) => {
 }
 const realWindow = window.parent || window;
 realWindow.addEventListener('mousemove', onMouseMove, false);
-//:FILE end
+

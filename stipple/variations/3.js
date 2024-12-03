@@ -40,7 +40,7 @@ function draw() {
     updatePixels()
 }
 
-//:FILE end
+
 
 //:FILE Graphics
 //.title Graphics Buffer
@@ -62,4 +62,3 @@ function keyPressed(){
     text(key, width / 2, height / 2)
 }
 
-//:FILE end

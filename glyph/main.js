@@ -37,7 +37,7 @@ function drawStuff() {
     drawHoles()
 }
 
-//:FILE end
+
 
 //:FILE Node_Network
 //.description Functions to create the network of nodes, finding 'legal' neighbors and calculating the network dimensions
@@ -108,7 +108,7 @@ function getNeighbors(pos) {
     return available
 }
 
-//:FILE end
+
 
 //:FILE Network_Drawing
 //.description Functions to draw the network of nodes and connections
@@ -161,7 +161,7 @@ function drawHoles() {
     })
 }
 
-//:FILE end
+
 
 //:FILE Drawing_Functions
 //.description Functions to draw connections between nodes: 'fancy' and 'full' connections
@@ -210,11 +210,10 @@ function drawFullConnection(c1, c2) {
 }
 
 
-//:FILE end
+
 
 //:FILE hidden
 //.hidden true
 function updateParams() {
     drawStuff()
 }
-//:FILE end

@@ -20,7 +20,7 @@ function mousePressed() {
     player.applyForce(V(cos(player.angle), sin(player.angle)).mult(-1))
 }
 
-//:FILE end
+
 
 //:FILE classes
 
@@ -115,7 +115,7 @@ function Bullet(pos, angle) {
     }
 }
 
-//:FILE end
+
 
 //:FILE cave
 
@@ -176,4 +176,3 @@ function updateCave() {
     }
 }
 
-//:FILE end

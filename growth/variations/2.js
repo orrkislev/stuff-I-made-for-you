@@ -63,7 +63,7 @@ function keyPressed() {
         else loop()
     }
 }
-//:FILE end
+
 
 //:FILE Objects
 
@@ -114,4 +114,3 @@ function grow() {
 
     createCircle(newX, newY, nodeToGrow)
 }
-//:FILE end

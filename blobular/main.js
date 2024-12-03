@@ -52,7 +52,7 @@ function showCompound(familyIndex) {
     image(paintGraphics, 0, 0)
 
 }
-//:FILE end
+
 
 //:FILE Dot_Class
 //.description Define the Dot class and its methods
@@ -95,7 +95,7 @@ class Dot extends GenericParticleClass {
         }
     }
 }
-//:FILE end
+
 
 //:FILE filters
 //.description Define filters to apply to the graphics
@@ -140,7 +140,7 @@ function thresholdFilter(graphics, clr) {
     graphics.clear()
     graphics.image(filterGraphics, 0, 0);
 }
-//:FILE end
+
 
 //:FILE hidden
 //.hidden true
@@ -167,4 +167,3 @@ function updateParams() {
     }
     oldDotsPerFamily = dotsPerFamily
 }
-//:FILE end

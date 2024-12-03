@@ -1,4 +1,4 @@
-//: HTML
+//:HTML
 <h2 class="text-2xl font-semibold mb-4 text-indigo-600">5. Adding a Second Ellipse</h2>
 <p class="mb-4">Two is better than one! We're adding a second, smaller ellipse in front of the first. It's not perfect yet, but it's starting to look like a simple 3D object. Can you see it?</p>
 <div class="bg-white px-4 rounded-lg shadow-md text-xs">
@@ -9,7 +9,7 @@
     </ul>
 </div>
 
-//: JS
+//:JS
 noFill()
 
 const dirVector = V(mouseX - width / 2, mouseY - height / 2)

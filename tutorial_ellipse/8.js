@@ -1,4 +1,4 @@
-//: HTML
+//:HTML
 <h2 class="text-2xl font-semibold mb-4 text-indigo-600">8. Creating a Multi-layered Glow</h2>
 <p class="mb-4">Time to amp up the glow! We're adding multiple layers of glow to each ellipse. It's like looking at stars twinkling in the night sky. Each layer adds depth and energy to our shapes.</p>
 <div class="bg-white px-4 rounded-lg shadow-md text-xs">
@@ -8,7 +8,7 @@
         <li>The <code class="bg-gray-200 px-1 rounded">for</code> loop: This draws the ellipse multiple times with different blur values.</li>
     </ul>
 </div>
-//: JS
+//:JS
 background(0)
 stroke(255, 255, 0)
 noFill()

@@ -51,4 +51,3 @@ function drawPoint(x, y) {
     circle(x, y, r)
 }
 
-//:FILE end

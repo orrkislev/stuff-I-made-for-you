@@ -43,7 +43,7 @@ function mouseDragged() {
     calcAllSections()
 }
 
-//:FILE end
+
 
 
 //:FILE
@@ -95,7 +95,7 @@ function createRing(body, y, r) {
 }
 
 
-//:FILE end
+
 
 //:FILE 
 //.title Main Animation Loop
@@ -139,7 +139,7 @@ function draw() {
     })
 }
 
-//:FILE end
+
 
 
 //:FILE Classes
@@ -255,4 +255,3 @@ const easeInOutCubic = t => t < .5 ? 4 * t ** 3 : 1 - (-2 * t + 2) ** 3 / 2
 const easeInOutQuint = t => t < .5 ? 16 * t ** 5 : 1 - (-2 * t + 2) ** 5 / 2
 const sign = x => x > 0 ? 1 : x < 0 ? -1 : 0
 
-//:FILE end
