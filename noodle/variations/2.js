@@ -1,4 +1,4 @@
-//: FILE Setup
+//:FILE Setup
 
 async function setup() {
     initP5(true)
@@ -51,4 +51,4 @@ function drawPoint(x, y) {
     circle(x, y, r)
 }
 
-//: FILE end
+//:FILE end

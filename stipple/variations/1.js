@@ -1,4 +1,4 @@
-//: FILE main.js
+//:FILE main.js
 blurSize = 100
 blurStrength = 200
 backgroundColor = '#282828'
@@ -36,9 +36,9 @@ function doTheThing(x, y) {
     set(x, y, grph.get(pos.x, pos.y))
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE Graphics
+//:FILE Graphics
 //.title Graphics Buffer
 
 function setupGraphics() {
@@ -61,4 +61,4 @@ function putText(letter) {
     area = [textWidth(letter) / 2 + 20, 320]
 }
 
-//: FILE end
+//:FILE end

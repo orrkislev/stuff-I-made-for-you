@@ -1,4 +1,4 @@
-//: FILE setup_stuff
+//:FILE setup_stuff
 //.description global variables, three.js scene, camera, renderer, controls and materials
 
 import * as THREE from 'three';
@@ -233,4 +233,4 @@ const realWindow = window.parent || window;
 realWindow.addEventListener( 'mousedown',   controls._onMouseDown, false );
 realWindow.addEventListener( 'pointerup',   controls._onPointerUp, false );
 realWindow.addEventListener( 'mousemove',   controls._onMouseMove, false );
-//: FILE end
+//:FILE end

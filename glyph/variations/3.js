@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 //.description Define parameters for the network, setup and main draw sequence
 
 colors = ['#555', '#333']
@@ -36,9 +36,9 @@ function drawStuff() {
     drawNetwork()
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE Node_Network
+//:FILE Node_Network
 //.description Functions to create the network of nodes, finding 'legal' neighbors and calculating the network dimensions
 
 function createNetwork() {
@@ -107,9 +107,9 @@ function getNeighbors(pos) {
     return available
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE Network_Drawing
+//:FILE Network_Drawing
 //.description Functions to draw the network of nodes and connections
 
 function adjustHexGrid() {
@@ -196,11 +196,11 @@ function drawConnectionLine(n1,n2){
     endShape()
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE hidden
+//:FILE hidden
 //.hidden true
 function updateParams() {
     drawStuff()
 }
-//: FILE end
+//:FILE end

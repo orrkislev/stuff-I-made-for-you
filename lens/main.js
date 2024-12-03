@@ -1,4 +1,4 @@
-//: FILE Setup
+//:FILE Setup
 //.description Create a scene with a camera and lights
 //.notes try adding more lights, try playing with the fog, try switching to PerspectiveCamera
 
@@ -45,9 +45,9 @@ function initLights() {
     scene.add(light);
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE lenses
+//:FILE lenses
 //.description Create the lens materials and the lenses (squished spheres)
 //.notes try playing with the lens material, try using a torus shape, try moving them around a bit
 
@@ -79,9 +79,9 @@ function createLenses() {
         lenses.push(lensMesh)
     }
 }
-//: FILE end
+//:FILE end
 
-//: FILE Text
+//:FILE Text
 //.description Create a text mesh with a given font
 //.notes try switching the font, try rotating the text, try changing the extrude or color settings
 
@@ -119,9 +119,9 @@ function createText() {
     if (!theFont) fontLoader.load(fontUrl, placeText)
     else placeText(theFont)
 }
-//: FILE end
+//:FILE end
 
-//: FILE camera
+//:FILE camera
 //.description Update the camera position based on the mouse position
 //.notes try adding a rotation to the camera, try adding a zoom effect
 
@@ -148,10 +148,10 @@ function updateCamera() {
     camera.position.y = -20 + mouseY * 40;
     camera.lookAt(0, 0, 0);
 }
-//: FILE end
+//:FILE end
 
 
-//: FILE run
+//:FILE run
 //.description Start the scene and animate it
 //.notes try adding a post-processing effect, try animating the lens movement
 function start() {
@@ -168,7 +168,7 @@ function animate() {
     renderer.render(scene, camera);
 }
 start()
-//: FILE end
+//:FILE end
 
 //:FILE hidden
 //.hidden true
@@ -211,4 +211,4 @@ window.updateParams = (params) => {
 }
 const realWindow = window.parent || window;
 realWindow.addEventListener('mousemove', onMouseMove, false);
-//: FILE end
+//:FILE end

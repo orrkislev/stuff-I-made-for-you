@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 
 ballSizeRange = [10, 100]
 totalBalls = 150
@@ -40,9 +40,9 @@ function draw() {
     Matter.Engine.update(engine, 0.1, .1)
     balls.forEach(ball => ball.show())
 }
-//: FILE end
+//:FILE end
 
-//: FILE ball
+//:FILE ball
 balls = []
 class Ball {
     constructor(x, y, r) {
@@ -99,4 +99,4 @@ class Ball {
         this.lastPos = { x: pos.x, y: pos.y }
     }
 }
-//: FILE end
+//:FILE end

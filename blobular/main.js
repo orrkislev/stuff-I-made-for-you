@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 //.description Define parameters for the network, setup and main draw sequence
 //.notes try having lots of different colors, try removing the 'background' line
 
@@ -52,9 +52,9 @@ function showCompound(familyIndex) {
     image(paintGraphics, 0, 0)
 
 }
-//: FILE end
+//:FILE end
 
-//: FILE Dot_Class
+//:FILE Dot_Class
 //.description Define the Dot class and its methods
 //.notes try making a circle bounding box for the dots, try adding a method to make the dots follow the mouse
 
@@ -95,9 +95,9 @@ class Dot extends GenericParticleClass {
         }
     }
 }
-//: FILE end
+//:FILE end
 
-//: FILE filters
+//:FILE filters
 //.description Define filters to apply to the graphics
 //.notes try making stripes instead of blur
 
@@ -140,9 +140,9 @@ function thresholdFilter(graphics, clr) {
     graphics.clear()
     graphics.image(filterGraphics, 0, 0);
 }
-//: FILE end
+//:FILE end
 
-//: FILE hidden
+//:FILE hidden
 //.hidden true
 let oldDotsPerFamily = dotsPerFamily
 function updateParams() {
@@ -167,4 +167,4 @@ function updateParams() {
     }
     oldDotsPerFamily = dotsPerFamily
 }
-//: FILE end
+//:FILE end

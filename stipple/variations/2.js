@@ -1,4 +1,4 @@
-//: FILE main.js
+//:FILE main.js
 blurSize = 80
 blurStrength = 10
 backgroundColor = 'tomato'
@@ -41,9 +41,9 @@ function draw() {
     updatePixels()
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE Graphics
+//:FILE Graphics
 //.title Graphics Buffer
 
 function setupGraphics(){
@@ -69,4 +69,4 @@ function updateGraphics(){
     grph.text(lastKey, 0, 0)
 }
 
-//: FILE end
+//:FILE end

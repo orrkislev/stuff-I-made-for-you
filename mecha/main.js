@@ -1,4 +1,4 @@
-//: FILE setup_stuff
+//:FILE setup_stuff
 //.description global variables, three.js scene, camera, renderer, controls and materials
 //.notes try switching to PointLight, try playing with the materials, try adding more lights
 
@@ -219,4 +219,4 @@ const realWindow = window.parent || window;
 realWindow.addEventListener( 'mousedown',   controls._onMouseDown, false );
 realWindow.addEventListener( 'pointerup',   controls._onPointerUp, false );
 realWindow.addEventListener( 'mousemove',   controls._onMouseMove, false );
-//: FILE end
+//:FILE end

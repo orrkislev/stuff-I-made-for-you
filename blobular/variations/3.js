@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 blobSize = 8
 blurSize = 8
 threshold = .6
@@ -52,9 +52,9 @@ function showCompound(family) {
 
     image(paintGraphics, 0, 0)
 }
-//: FILE end
+//:FILE end
 
-//: FILE Dot_Class
+//:FILE Dot_Class
 const allDots = []
 class Dot extends GenericParticleClass {
     constructor(family) {
@@ -85,9 +85,9 @@ class Dot extends GenericParticleClass {
         }
     }
 }
-//: FILE end
+//:FILE end
 
-//: FILE filters
+//:FILE filters
 function blurFilter(graphics, size) {
     graphics.drawingContext.filter = `blur(${size}px)`
     graphics.image(graphics.get(), 0, 0)
@@ -162,4 +162,4 @@ function outlineFilter(graphics) {
     graphics.clear()
     graphics.image(filterGraphics, 0, 0);
 }
-//: FILE end
+//:FILE end

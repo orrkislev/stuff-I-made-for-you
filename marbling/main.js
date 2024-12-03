@@ -1,4 +1,4 @@
-//: FILE Main
+//:FILE Main
 backgroundColor = '#ccc'
 dropSize = [10, 20]
 
@@ -27,9 +27,9 @@ function mouseReleased() {
 function keyPressed() {
     if (key == 's') saveSVG()
 }
-//: FILE end
+//:FILE end
 
-//: FILE Drop
+//:FILE Drop
 drops = []
 class Drop {
     constructor(x, y) {
@@ -83,4 +83,4 @@ class Drop {
         endShape(CLOSE)
     }
 }
-//: FILE end
+//:FILE end

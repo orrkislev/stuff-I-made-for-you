@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 totalBalls = 250;
 colors = ['brown', 'seagreen', 'orange', 'cornflowerblue'];
 eyeSize = 4;
@@ -51,9 +51,9 @@ function draw() {
     fill(0)
     balls.forEach(ball => circle(ball.body.position.x, ball.body.position.y, 3));
 }
-//: FILE end
+//:FILE end
 
-//: FILE ball
+//:FILE ball
 
 class Ball {
     constructor(x, y, r) {
@@ -71,4 +71,4 @@ class Ball {
     }
 }
 
-//: FILE end
+//:FILE end

@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 
 cellSize = 8
 
@@ -20,9 +20,9 @@ function mousePressed() {
     player.applyForce(V(cos(player.angle), sin(player.angle)).mult(-1))
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE classes
+//:FILE classes
 
 const speed = 1
 const angSpeed = 4
@@ -115,9 +115,9 @@ function Bullet(pos, angle) {
     }
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE cave
+//:FILE cave
 
 let bg
 function reset() {
@@ -176,4 +176,4 @@ function updateCave() {
     }
 }
 
-//: FILE end
+//:FILE end

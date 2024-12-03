@@ -1,4 +1,4 @@
-//: FILE main.js
+//:FILE main.js
 blurSize = 280
 blurStrength = 45
 backgroundColor = '#282828'
@@ -40,9 +40,9 @@ function draw() {
     updatePixels()
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE Graphics
+//:FILE Graphics
 //.title Graphics Buffer
 
 function setupGraphics(){
@@ -62,4 +62,4 @@ function keyPressed(){
     text(key, width / 2, height / 2)
 }
 
-//: FILE end
+//:FILE end

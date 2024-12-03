@@ -1,4 +1,4 @@
-//: FILE Main
+//:FILE Main
 
 stepSize = 11
 thickness = 9
@@ -43,10 +43,10 @@ function mouseDragged() {
     calcAllSections()
 }
 
-//: FILE end
+//:FILE end
 
 
-//: FILE
+//:FILE
 //.title Element Creation
 
 function createCone(h = 200, r1 = 60, r2 = 60) {
@@ -95,9 +95,9 @@ function createRing(body, y, r) {
 }
 
 
-//: FILE end
+//:FILE end
 
-//: FILE 
+//:FILE 
 //.title Main Animation Loop
 
 allSections = []
@@ -139,10 +139,10 @@ function draw() {
     })
 }
 
-//: FILE end
+//:FILE end
 
 
-//: FILE Classes
+//:FILE Classes
 
 bodies = []
 class Body {
@@ -255,4 +255,4 @@ const easeInOutCubic = t => t < .5 ? 4 * t ** 3 : 1 - (-2 * t + 2) ** 3 / 2
 const easeInOutQuint = t => t < .5 ? 16 * t ** 5 : 1 - (-2 * t + 2) ** 5 / 2
 const sign = x => x > 0 ? 1 : x < 0 ? -1 : 0
 
-//: FILE end
+//:FILE end

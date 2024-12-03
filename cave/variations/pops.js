@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 
 ballSizeRange = [20, 40]
 totalBalls = 100
@@ -53,9 +53,9 @@ function draw() {
     balls = balls.filter(b=>!b.shouldRemove)
     explosions = explosions.filter(b=>!b.shouldRemove)
 }
-//: FILE end
+//:FILE end
 
-//: FILE ball
+//:FILE ball
 
 explosions = []
 class Explosion{
@@ -128,4 +128,4 @@ class Ball {
         this.lastPos = { x: pos.x, y: pos.y }
     }
 }
-//: FILE end
+//:FILE end

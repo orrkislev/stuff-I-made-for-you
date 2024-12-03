@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 
 maxConnections = 4
 normalStrength = .3
@@ -26,9 +26,9 @@ async function makeImage() {
     await fillGrid()
     for (let i = 0; i < eyeCount; i++) makeEye()
 }
-//: FILE end
+//:FILE end
 
-//: FILE grid_functions
+//:FILE grid_functions
 function initGrid() {
     grid = {}
     rows = floor(height / cellSize)
@@ -70,9 +70,9 @@ async function fillGrid() {
         await timeout()
     }
 }
-//: FILE end
+//:FILE end
 
-//: FILE cell_functions
+//:FILE cell_functions
 function makeCell(x, y) {
     if (grid[x + ',' + y]) return
     let cell = setupCellByNeighbors(x, y)
@@ -195,9 +195,9 @@ function drawCell(x, y, cell) {
     connections.forEach(drawConnection)
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE misc_functions
+//:FILE misc_functions
 
 function makeEye() {
     const x = floor(random(1, cols - 1))
@@ -211,9 +211,9 @@ function makeEye() {
 
     drawEye(posX + cellWidth / 2, posY + cellHeight / 2, cellWidth, cellHeight)
 }
-//: FILE end
+//:FILE end
 
-//: FILE drawing_functions
+//:FILE drawing_functions
 
 function drawConnection(c) {
     const from = getPosition(c.from.dir, c.from.position)
@@ -273,9 +273,9 @@ function myCircle(x, y, r) {
 }
 
 
-//: FILE end
+//:FILE end
 
-//: FILE hidden
+//:FILE hidden
 //.hidden true
 
 function redrawGrid() {
@@ -301,4 +301,4 @@ function updateParams() {
 }
 
 
-//: FILE end
+//:FILE end

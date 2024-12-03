@@ -1,4 +1,4 @@
-//: FILE main
+//:FILE main
 
 maxConnections = 15
 normalStrength = .3
@@ -36,9 +36,9 @@ function draw() {
         for (let y = 0; y < rows; y++)
             drawCell(x, y, grid[x + ',' + y])
 }
-//: FILE end
+//:FILE end
 
-//: FILE grid_functions
+//:FILE grid_functions
 function initGrid() {
     grid = {}
     rows = floor(height / cellSize)
@@ -79,9 +79,9 @@ function fillGrid() {
         makeCell(allPositions[i][0], allPositions[i][1])
     }
 }
-//: FILE end
+//:FILE end
 
-//: FILE cell_functions
+//:FILE cell_functions
 function makeCell(x, y) {
     if (grid[x + ',' + y]) return
     let cell = setupCellByNeighbors(x, y)
@@ -214,9 +214,9 @@ function drawCell(x, y, cell) {
     cell.connections.forEach(drawConnection)
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE misc_functions
+//:FILE misc_functions
 
 function makeEye() {
     const x = floor(random(1, cols - 1))
@@ -230,9 +230,9 @@ function makeEye() {
 
     drawEye(posX + cellWidth / 2, posY + cellHeight / 2, cellWidth, cellHeight)
 }
-//: FILE end
+//:FILE end
 
-//: FILE drawing_functions
+//:FILE drawing_functions
 
 function drawConnection(c) {
     const from = getPosition(c.from.dir, c.from.position)
@@ -261,9 +261,9 @@ function drawEye(x, y, w, h) {
     pop()
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE hidden
+//:FILE hidden
 //.hidden true
 
 // function redrawGrid() {
@@ -288,4 +288,4 @@ function drawEye(x, y, w, h) {
 // }
 
 
-//: FILE end
+//:FILE end

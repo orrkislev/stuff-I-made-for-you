@@ -1,4 +1,4 @@
-//: FILE Setup
+//:FILE Setup
 //.description Initialize the p5 and paper.js environments, and set up the noodle drawing
 //.notes Adjust the light intensity, color, and noodle properties for different effects
 
@@ -53,9 +53,9 @@ async function actuallyDrawSomething() {
     await noodle.drawLight()
 }
 
-//: FILE end
+//:FILE end
 
-//: FILE Noodle
+//:FILE Noodle
 //.description Define the Noodle class and its methods for drawing the noodle and its light effects
 //.notes Experiment with different colors, radii, and light properties
 
@@ -132,4 +132,4 @@ class Noodle {
         }
     }
 }
-//: FILE end
+//:FILE end

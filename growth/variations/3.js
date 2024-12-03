@@ -1,4 +1,4 @@
-//: FILE Main
+//:FILE Main
 
 //.title Main draw loop and interaction
 //.description update all elements and draw them
@@ -47,12 +47,12 @@ function keyPressed() {
     }
 }
 
-//: FILE end
+//:FILE end
 
 
 
 
-//: FILE Objects
+//:FILE Objects
 //.title Vertices and Connections
 //.description create and connect vertices
 function grow() {
@@ -112,4 +112,4 @@ function makeConnection(a, b) {
     b.connections = b.connections || []
     b.connections.push(a)
 }
-//: FILE end
+//:FILE end
