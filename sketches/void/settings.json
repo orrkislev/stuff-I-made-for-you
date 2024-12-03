@@ -4,7 +4,7 @@
     ],
     "script": "void.js",
     "snippets": [
-        "initP5", "initFaceApi", "EasyGrad", "round_random"
+        "initP5", "initFaceApi", "EasyGrad", "round_random", "withBlur"
     ],
     "title": "WCCC - Void",
     "description": [
