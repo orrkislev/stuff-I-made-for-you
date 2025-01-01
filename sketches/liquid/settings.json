@@ -12,5 +12,15 @@
         "drawing is done with a 'brush' - a bunch of curves going in the same direction, with about the same length and color",
         "colors are based on the distance from the center (radius of the ripple), the derivative of the sine wave (shape of the ripple), and the angle of the curve (direction of the ripple at the point)",
         "noise masking is used to make the ripples look more natural"
-    ]
+    ],
+    "params":{
+        "ripples": {
+            "name": "Ripples",
+            "type": "number",
+            "min": 0,
+            "max": 10,
+            "step": 0.1,
+            "value": 3
+        }
+    }
 }

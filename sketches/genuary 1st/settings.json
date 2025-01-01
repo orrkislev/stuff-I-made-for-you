@@ -1,0 +1,49 @@
+{
+    "libraries": [
+        "p5"
+    ],
+    "script": "genuary 1st.js",
+    "snippets": [
+        "initP5",
+        "random"
+    ],
+    "title": "WCCC - Genuary 1st",
+    "description": [
+        "the prompt was 'Vertical or horizontal lines only'"
+    ],
+    "refreshOnParamsChange": true,
+    "params": {
+        "step": {
+            "name": "step",
+            "type": "number",
+            "min": 2,
+            "max": 20,
+            "step": 1,
+            "value": 6
+        },
+        "size": {
+            "name": "size",
+            "type": "number",
+            "min": 2,
+            "max": 20,
+            "step": 1,
+            "value": 3
+        },
+        "cosval": {
+            "name": "cosVal",
+            "type": "number",
+            "min": 0,
+            "max": 10,
+            "step": 0.1,
+            "value": 5
+        },
+        "sinval": {
+            "name": "sinVal",
+            "type": "number",
+            "min": 0,
+            "max": 10,
+            "step": 0.1,
+            "value": 5
+        }
+    }
+}
