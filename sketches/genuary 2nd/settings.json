@@ -1,0 +1,16 @@
+{
+    "libraries": [
+        "p5","paper"
+    ],
+    "script": "genuary 2nd.js",
+    "snippets": [
+        "initP5",
+        "initPaper",
+        "random",
+        "choose"
+    ],
+    "title": "WCCC - Genuary 2nd",
+    "description": [
+        "genuary 2nd, layers upon layers upon layers"
+    ],
+}

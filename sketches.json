@@ -49,6 +49,11 @@
             "name": "Genuary 1st",
             "description": "WCCC Genuary 1st",
             "directory": "genuary 1st"
+        },
+        {
+            "name": "Genuary 2nd",
+            "description": "WCCC Genuary 2nd",
+            "directory": "genuary 2nd"
         }
     ]
 }
