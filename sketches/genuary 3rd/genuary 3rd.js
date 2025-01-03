@@ -1,4 +1,4 @@
-gridx = 5, gridy = 5, cs = 20
+gridx = 10, gridy = 18, cs = 20
 function setup() {
     initP5(true)
     grid = Array(gridy).fill().map(() => Array(gridx).fill(0))
@@ -13,7 +13,7 @@ function setup() {
 function insertToGrid() {
     let x = round_random(gridx - 1)
     let y = round_random(gridy - 1)
-    let s = round_random(5)
+    let s = round_random(10)
     for (let i = x; i < x + s; i++) {
         for (let j = y; j < y + s; j++) {
             if (i < 0 || j < 0 || i >= gridx || j >= gridy) return
