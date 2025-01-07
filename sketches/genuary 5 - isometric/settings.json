@@ -1,0 +1,14 @@
+{
+    "libraries": [
+        "p5", "paper"
+    ],
+    "script": "genuary 5 - isometric.js",
+    "snippets": [
+        "initP5",
+        "initPaper",
+        "random",
+        "drawPath"
+    ],
+    "title": "WCCC - Genuary 5 - Isometric",
+    "description": []
+}

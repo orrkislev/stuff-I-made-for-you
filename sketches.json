@@ -59,6 +59,11 @@
             "name": "genuary 3rd",
             "description": "WCCC genuary 3rd",
             "directory": "genuary 3rd"
+        },
+        {
+            "name": "Genuary 5 - Isometric",
+            "description": "WCCC Genuary 5 - Isometric",
+            "directory": "genuary 5 - isometric"
         }
     ]
 }
