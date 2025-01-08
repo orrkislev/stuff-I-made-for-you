@@ -64,6 +64,11 @@
             "name": "Genuary 5 - Isometric",
             "description": "WCCC Genuary 5 - Isometric",
             "directory": "genuary 5 - isometric"
+        },
+        {
+            "name": "Genuary 6 - landscape",
+            "description": "WCCC Genuary 6 - landscape",
+            "directory": "genuary 6 - landscape"
         }
     ]
 }

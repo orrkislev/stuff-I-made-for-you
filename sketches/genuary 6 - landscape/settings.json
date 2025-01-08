@@ -1,0 +1,61 @@
+{
+    "libraries": [
+        "p5", "paper"
+    ],
+    "script": "genuary 6 - landscape.js",
+    "snippets": [
+        "initP5",
+        "initPaper",
+        "random",
+        "drawPath"
+    ],
+    "title": "Genuary 6 - landscape",
+    "description": [],
+    "refreshOnParamsChange": true,
+    "params": {
+        "houses": {
+            "name": "houses",
+            "type": "number",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 30
+        },
+        "backgroundclr": {
+            "name": "backgroundClr",
+            "type": "color",
+            "value": "#f0e1e6"
+        },
+        "watercolor": {
+            "name": "waterColor",
+            "type": "color",
+            "value": "royalblue"
+        },
+        "forestcolor": {
+            "name": "forestColor",
+            "type": "color",
+            "value": "forestgreen"
+        },
+        "housecolor": {
+            "name": "houseColor",
+            "type": "color",
+            "value": "crimson"
+        },
+        "w": {
+            "name": "w",
+            "type": "number",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 0.8
+        },
+        "h": {
+            "name": "h",
+            "type": "number",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 0.8
+        }
+    }
+}
